@@ -1,0 +1,328 @@
+.chatFlexBox {
+  position: relative;
+  z-index: 99;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 1px -3px 12px rgba(158, 158, 158, 0.5098039216);
+  padding: 10px 0px;
+  background: white;
+  display: flex;
+}
+.chatFlexBox .chatLeftSideBox {
+  width: 30%;
+  border-right: 1px solid rgba(128, 128, 128, 0.3215686275);
+}
+.chatFlexBox .chatLeftSideBox .chatSearchBox {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+.chatFlexBox .chatLeftSideBox .chatSearchBox input {
+  border: 1px solid #064CDB;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px 0px 0 5px;
+  padding: 20px;
+  font-size: 15px;
+}
+.chatFlexBox .chatLeftSideBox .chatSearchBox input::-moz-placeholder {
+  letter-spacing: 2px;
+}
+.chatFlexBox .chatLeftSideBox .chatSearchBox input::placeholder {
+  letter-spacing: 2px;
+}
+.chatFlexBox .chatLeftSideBox .chatSearchBox svg {
+  background: #064CDB;
+  color: white;
+  font-size: 55px;
+  padding: 5px 10px;
+  height: 50px;
+  border-radius: 0px 5px 5px 0px;
+}
+.chatFlexBox .chatLeftSideBox .chatBodyScrollBox::-webkit-scrollbar-track {
+  background-color: white;
+}
+.chatFlexBox .chatLeftSideBox .chatBodyScrollBox::-webkit-scrollbar {
+  width: 4px;
+  background-color: #F5F5F5;
+}
+.chatFlexBox .chatLeftSideBox .chatBodyScrollBox::-webkit-scrollbar-thumb {
+  background-color: #064CDB;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3215686275);
+  cursor: pointer;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody .chatTxtInnerBody {
+  display: flex;
+  align-items: center;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody:hover {
+  background: #064CDB;
+  transition: 1s;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody:hover .chatContentBox span {
+  color: white;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody:hover .chatContentBox p {
+  color: white;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody:hover .chatTimeLineAndNotificateBox span {
+  color: white;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody:hover .chatTimeLineAndNotificateBox h4 {
+  background: white;
+  color: black;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody img {
+  height: 47px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody .chatContentBox {
+  margin-left: 20px;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody .chatContentBox span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody .chatContentBox p {
+  font-size: 12px;
+  margin-top: 2px;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody .chatContentBox p svg.msgSending {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody .chatContentBox p svg.hasSent {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody .chatTimeLineAndNotificateBox {
+  position: relative;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody .chatTimeLineAndNotificateBox span {
+  font-size: 10px;
+}
+.chatFlexBox .chatLeftSideBox .chatTxtBody .chatTimeLineAndNotificateBox h4 {
+  width: 25px;
+  font-size: 12px;
+  background: #064CDB;
+  padding: 5px 0px;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+}
+.chatFlexBox .chatLeftSideBox #activeChatBox {
+  background: #064CDB;
+}
+.chatFlexBox .chatLeftSideBox #activeChatBox .chatContentBox span {
+  color: white;
+}
+.chatFlexBox .chatLeftSideBox #activeChatBox .chatContentBox p {
+  color: white;
+}
+.chatFlexBox .chatLeftSideBox #activeChatBox .chatTimeLineAndNotificateBox span {
+  color: white;
+}
+.chatFlexBox .chatLeftSideBox #activeChatBox .chatTimeLineAndNotificateBox h4 {
+  background: white;
+  color: black;
+}
+.chatFlexBox .chatRightSideBox {
+  width: 70%;
+}
+.chatFlexBox .chatRightSideBox .chatTopBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3215686275);
+}
+.chatFlexBox .chatRightSideBox .chatTopBar .userOnlineStatus h4 {
+  font-size: 20px;
+  margin: 0;
+}
+.chatFlexBox .chatRightSideBox .chatTopBar .userOnlineStatus span {
+  color: green;
+}
+.chatFlexBox .chatRightSideBox .chatTopBar .chatSetting {
+  position: relative;
+}
+.chatFlexBox .chatRightSideBox .chatTopBar .chatSetting svg {
+  font-size: 25px;
+  cursor: pointer;
+}
+.chatFlexBox .chatRightSideBox .chatTopBar .chatSetting .chatActionsBox {
+  position: absolute;
+  width: 180px;
+  right: 0;
+  background: white;
+  margin-top: 15px;
+  padding: 10px;
+  z-index: 9999;
+  box-shadow: 0px 1px 10px rgba(158, 158, 158, 0.5098039216);
+  display: none;
+}
+.chatFlexBox .chatRightSideBox .chatTopBar .chatSetting .chatActionsBox ul li {
+  line-height: 50px;
+}
+.chatFlexBox .chatRightSideBox .chatTopBar .chatSetting .chatActionsBox ul li svg {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.chatFlexBox .chatRightSideBox .chatTopBar .chatSetting .chatActionsBox ul li span {
+  font-weight: 400;
+}
+.chatFlexBox .chatRightSideBox .chatRightScrollBox {
+  height: 400px;
+  overflow-y: scroll;
+  background: #F8F8F8;
+}
+.chatFlexBox .chatRightSideBox .chatRightScrollBox::-webkit-scrollbar-track {
+  background: #F8F8F8;
+}
+.chatFlexBox .chatRightSideBox .chatRightScrollBox::-webkit-scrollbar {
+  width: 4px;
+  background-color: #F5F5F5;
+}
+.chatFlexBox .chatRightSideBox .chatRightScrollBox::-webkit-scrollbar-thumb {
+  background-color: #064CDB;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne img {
+  height: 47px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne p {
+  position: relative;
+  margin-left: 20px;
+  padding: 5px 15px;
+  width: 50%;
+  border-radius: 10px 10px 10px 0;
+  background: white;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne p .chatTimeBox {
+  float: right;
+  margin-top: 20px !important;
+  border: 1px solid rgba(128, 128, 128, 0.3215686275);
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne p .chatTimeBox span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne p .chatTimeBox svg.signleCheck {
+  margin-left: 5px;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightOne p .chatTimeBox svg.Doublecheck_ico {
+  color: #2196f3;
+  margin-left: 5px;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightTwo {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 20px;
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p {
+  position: relative;
+  margin-left: 20px;
+  padding: 5px 15px;
+  width: 50%;
+  border-radius: 10px 10px 10px 0;
+  background: #064CDB;
+  color: white;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p .chatTimeBox {
+  float: right;
+  margin-top: 20px !important;
+  border: 1px solid rgba(128, 128, 128, 0.3215686275);
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p .chatTimeBox span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p .chatTimeBox svg.signleCheck {
+  margin-left: 5px;
+}
+.chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p .chatTimeBox svg.Doublecheck_ico {
+  color: #2196f3;
+  margin-left: 5px;
+}
+.chatFlexBox .chatRightSideBox .inputChatbox {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20px 20px;
+  background: white;
+}
+.chatFlexBox .chatRightSideBox .inputChatbox input {
+  border: 1px solid #064CDB;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px 0px 0 5px;
+  padding: 20px;
+  font-size: 15px;
+}
+.chatFlexBox .chatRightSideBox .inputChatbox input::-moz-placeholder {
+  letter-spacing: 2px;
+}
+.chatFlexBox .chatRightSideBox .inputChatbox input::placeholder {
+  letter-spacing: 2px;
+}
+.chatFlexBox .chatRightSideBox .inputChatbox svg {
+  background: #064CDB;
+  color: white;
+  font-size: 55px;
+  padding: 5px 10px;
+  height: 50px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.ShowBox {
+  display: block !important;
+}
+
+@media screen and (max-width: 992px) {
+  .chatFlexBox {
+    flex-direction: column;
+  }
+  .chatFlexBox .chatLeftSideBox {
+    width: auto;
+  }
+  .chatFlexBox .chatRightSideBox {
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .chatFlexBox .chatRightSideBox .chatContentBoxRightOne p {
+    margin-right: 20px;
+    width: auto;
+  }
+  .chatFlexBox .chatRightSideBox .chatContentBoxRightTwo p {
+    width: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .chatFlexBox .chatRightSideBox .chatContentBoxRightOne {
+    flex-direction: column;
+  }
+  .chatFlexBox .chatRightSideBox .chatContentBoxRightOne img {
+    width: 47px;
+    margin: 0 0 14px 18px;
+  }
+}/*# sourceMappingURL=chat.css.map */

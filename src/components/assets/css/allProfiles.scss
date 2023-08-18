@@ -1,0 +1,117 @@
+// COLORS ===========================================
+@import 'colors';
+
+
+.allProfileAdminBox{
+    margin-top: 100px;
+    box-shadow: 3px 6px 10px $shadowColor;
+    border-radius: 18px;
+    border: 2px solid $borderColor;
+    margin-bottom: 120px;
+    h4.DesktopViewHead{
+        font-size: 23px;
+        margin: 15px 0 0 7px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    h4.MobileViewHead{
+        display: none;
+        font-size: 23px;
+        margin: 15px 0 0 7px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .innerallProfileAdminBox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .btnBox{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            button{
+                padding: 5px 10px;
+                margin: 0 5px;
+                height: 35px;
+                border-radius: 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+                &:hover{
+                    background-color: #1a83d8;
+                }
+            }
+            a{
+                border-radius: 5px;
+                margin: 0 5px;
+                padding: 5px 10px;
+                height: 35px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+        .searchBar {
+            position: relative;
+            margin-right: 10px;
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE ===========================================
+@media screen and (max-width:992px){
+    .allProfileAdminBox{
+        h4.DesktopViewHead{
+            display: none;
+        }
+        h4.MobileViewHead{
+            display: block;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .allProfileAdminBox{
+        h4.MobileViewHead{
+            text-align: center;
+        }
+        .innerallProfileAdminBox{
+            justify-content: center;
+           .searchBar{
+                width: 90%;
+                margin-right: 0;
+                margin: auto;
+                input{
+                    margin-top: 5px;
+                    width: 100%;
+                }
+           }
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    .allProfileAdminBox{
+        margin-bottom: 200px !important
+    }
+}

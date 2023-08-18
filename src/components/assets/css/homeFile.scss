@@ -1,0 +1,107 @@
+
+
+// COLORS ===========================================
+@import 'colors';
+
+
+// VISITORS CHART SCSS ==========================================
+.visitorsChartHead{
+    font-size: 20px;
+    color: $txtGreyColor;
+}
+.visitorsChart{
+    box-shadow: 2px 2px 10px $shadowColor;
+    padding: 16px 10px;
+    border-radius: 10px;
+   
+    .innerVisitChartBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: self-end;
+        border-radius: 10px;
+    }
+    .chart{
+        width: 50% !important;
+    }
+}
+
+.visitorsChart{
+    
+    .visitCountPerWeek{
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        h6{
+            font-size: 33px;
+        }
+        span{
+            font-size: 15px;
+            color: $txtGreyColor;
+        }
+    }
+}
+
+// EARNING CHARTS SCSS ======================================
+.earningChartBox{
+    box-shadow: 2px 2px 10px $shadowColor;
+    border-radius: 10px;
+    padding: 10px 30px;
+    .earningPerDayBox{
+        h3{
+            color: black;
+            margin: 0;
+            font-size: 22px;
+        }
+        span{
+            font-size: 13px;
+            color: $txtGreyColor;
+        }
+    }
+}
+
+
+// SALES PROGRESS CHART SCSS ===============================================
+.SalesProgress{
+    box-shadow: 2px 2px 10px $shadowColor;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-top: 50px;
+
+    .SalesProgressHead{
+        margin: 10px 0;
+        span{
+            color: $txtGreyColor;
+        }
+        h5{
+            margin: 5px 0;
+        }
+    }
+}
+
+// ONE MONTHE SALE PROGESS
+.OneMonSalesProgress{
+    box-shadow: 2px 2px 10px $shadowColor;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-top: 50px;
+
+    .OneMonSalesProgressHead{
+        margin: 10px 0;
+        span{
+            color: $txtGreyColor;
+        }
+        h5{
+            margin: 5px 0;
+        }
+        .OneMonInnerBox{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            span{
+                font-size: 13px;
+            }
+        }
+    }
+}

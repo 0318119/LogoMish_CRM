@@ -1,0 +1,371 @@
+
+// COLORS ===========================================
+@import 'colors';
+
+
+// CUSTOMER'S LEADS SCSS  ========================================================
+
+.CusLeadsBox{
+    margin-top: 100px;
+    box-shadow: 3px 6px 10px $shadowColor;
+    border-radius: 18px;
+    border: 2px solid $borderColor;
+    margin-bottom: 120px;
+    .CusLeadsBoxHeadOne{
+        display: none;
+    }
+    .innerCusLeadsBox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .btnBox{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;   
+            .addLeadsBtn{
+                background: $lightBlue;
+                color: $white;
+                border-radius: 5px;
+                letter-spacing: 1px;
+                display: flex;
+                align-items: center;
+                svg{
+                    font-size: 25px;
+                    margin-right: 5px;
+                }
+            }
+
+            button{
+                padding: 5px 10px;
+                margin: 0 5px;
+                height: 35px;
+                border-radius: 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+            a{
+                border-radius: 5px;
+                margin: 0 5px;
+                padding: 5px 10px;
+                height: 35px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+        .CusLeadsBoxHeadTwo{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .searchBar {
+            position: relative;
+            margin-right: 10px;
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// DELETE ALERT BOX =======================================
+.deleteAlertBox{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000056;
+    .addCommentBox{
+        width: 40%;
+    }
+    .viewCommentBox{
+        width: 40%;
+    }
+    .deleteAlertBoxInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $bgGradientColor;
+        position: relative;
+        padding: 36px 46px;
+        box-shadow: 5px 1px 10px grey;
+        border-radius: 10px;
+        border: 5px solid $white;
+        position: relative;
+            .closeIco{
+                position: absolute;
+                right: 2%;
+                top: 7px;
+                color: white;
+                border: 2px solid white;
+                font-size: 23px;
+                padding: 2px;
+                border-radius: 20px;
+            }
+        .deleteAlertIconBox{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            padding: 17px 0;
+            border-radius: 10px;
+            svg{
+                font-size: 100px;
+                color: #ffcc00;
+            }
+        }
+        span{
+            font-size: 16px;
+            text-transform: capitalize;
+            text-align: center;
+            color: white;
+        }
+        .deleteBtnBox{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            button{
+                background: $white;
+                display: block;
+                margin: 11px auto 0 auto;
+                padding: 8px 18px;
+                border-radius: 20px;
+                font-weight: 500;
+            }
+        }
+        #viewCommentScrollBox{
+            overflow: auto;
+            height: 200px;
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid white;
+            border-radius: 11px;
+            color: white;
+            .commentDes{
+                color: grey;
+                letter-spacing: 1px;
+                line-height: 30px;
+                display: block;
+                font-size: 17px;
+            }
+        }
+        #viewCommentScrollBox::-webkit-scrollbar{
+            width: 8px;
+            height: 20px;
+            background-color: white;
+        }
+        #viewCommentScrollBox::-webkit-scrollbar-thumb{
+            border-radius: 10px 0 10px 0;
+            background: #2196f3;
+        }
+        .commentDes{
+            padding: 0;
+            margin: 0;
+        }
+        
+        h5.commentHead{
+            font-size: 25px;
+            color: $white;
+        }
+        #textareaBox{
+            width: 100%;
+            height: 150px;
+        }
+        
+    }
+}
+
+// ===================
+.customerLeadsTag{
+    white-space: break-spaces;
+    line-height: 19px;
+    display: block;
+}
+// LEAD EMAIL ALERT BOX ON RIGHT SIDE
+.showLeadEmailAlertBox{
+    position: fixed;
+    right: 21px;
+    bottom: 20px;
+    width: 30%;
+    background: white;
+    box-shadow: -3px 2px 10px #80808069;
+    padding: 37px 40px;
+    border-radius: 10px;
+    z-index: 9999;
+    svg{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 22px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+}
+
+// ADD CLOSER MODULE CSS
+.addCloserModuleBox{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000056;
+    .addCloserModuleInnerBox{
+        padding: 23px 26px;
+        border: 5px solid $white;
+        border-radius: 18px;
+        width: 40%;
+        position: relative;
+        background: $bgGradientColor;
+        svg{
+            position: absolute;
+            right: 2%;
+            top: 7px;
+            color: white;
+            border: 2px solid white;
+            font-size: 23px;
+            padding: 2px;
+            border-radius: 20px;
+        }
+        label{
+            color: $white;
+            font-weight: 500;
+            font-size: 25px;
+        }
+        button{
+            background: white;
+            display: block;
+            margin: 11px auto 0 auto;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+    }
+}
+// RESPONSIVE ====================================================================
+$breakpoint-tablet: 768px;
+
+@media screen and (max-width: 992px) {
+    .CusLeadsBox{
+        .CusLeadsBoxHeadOne{
+            display: block;
+            font-size: 23px;
+            margin: 15px 0 0 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .innerCusLeadsBox{
+            justify-content: center;
+            .CusLeadsBoxHeadTwo{
+                display: none;
+            }
+            .searchBar {
+                margin-top: 20px;
+                width: 90%;
+                margin-right: 0;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .viewCommentBox{
+        width: 70% !important;
+    }
+    .addCommentBox{
+        width: 70% !important;
+    }
+    .addCloserModuleBox{
+        .addCloserModuleInnerBox {
+            width: 60%;
+        }
+    }
+}
+@media screen and (max-width: $breakpoint-tablet) {
+    .showLeadEmailAlertBox{
+        width: 40%;
+    }
+}
+@media screen and (max-width:480px){
+    .deleteAlertBoxInner{
+        width: 95%;
+        span{
+            font-size: 18px !important;
+            text-align: center;
+        }
+    }
+    .addCommentBox{
+        width: 95% !important;
+    }
+    .showLeadEmailAlertBox{
+        width: 70%;
+    }
+    .addCloserModuleBox{
+        .addCloserModuleInnerBox {
+            width: 95%;
+        }
+    }
+}
+@media screen and (max-width:420px){
+    .viewCommentBox{
+        width: 95% !important;
+    }
+
+    .deleteAlertBox{
+        .deleteAlertBoxInner{
+            .deleteAlertIconBox{
+                svg{
+                    font-size: 50px;
+                    border: 2px solid #ffc107;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    .allProfileAdminBox{
+        margin-bottom: 200px;
+    }
+}
+@media screen and (max-width:320px){
+    .CusLeadsBox{
+        margin-bottom: 200px;
+    }
+}
+@media screen and (max-width: 380px){
+    .CusLeadsBox{
+        margin-bottom: 200px !important
+    }
+}

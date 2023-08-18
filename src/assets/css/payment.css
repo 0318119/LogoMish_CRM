@@ -1,0 +1,47 @@
+.paymentSection {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.paymentSection .paymentFormBox {
+  margin-top: 40px;
+}
+.paymentSection .paymentFormBox img {
+  height: 80px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.paymentSection .paymentFormBox h5 {
+  background: white;
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+.paymentSection .paymentFormBox .paymentItemsBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  word-break: break-all;
+}
+.paymentSection .paymentFormBox .paymentItemsBox span {
+  color: white;
+  font-size: 18px;
+}
+.paymentSection .paymentFormBox .paymentItemsBox h6 {
+  display: flex;
+  align-items: center;
+}
+.paymentSection .paymentFormBox .paymentItemsBox h6 svg {
+  color: white;
+  font-size: 30px;
+}
+.paymentSection .paymentFormBox .paymentItemsBox h6 span {
+  color: white;
+  font-size: 18px;
+  margin-left: 5px;
+}/*# sourceMappingURL=payment.css.map */

@@ -1,0 +1,253 @@
+// COLORS ===========================================
+@import 'colors';
+
+
+
+.frontSalesBox {
+    margin-top: 100px;
+    box-shadow: 3px 6px 10px $shadowColor;
+    border-radius: 18px;
+    border: 2px solid $borderColor;
+    margin-bottom: 120px;
+    .frontSalesBoxHeadOne{
+        display: none;
+    }
+
+    .innerfrontSalesBox {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+
+        .btnBox {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            button {
+                padding: 5px 10px;
+                margin: 0 5px;
+                height: 35px;
+                border-radius: 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: #1a83d8;
+                }
+            }
+
+            a {
+                border-radius: 5px;
+                margin: 0 5px;
+                padding: 5px 10px;
+                height: 35px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+        .frontSalesBoxHeadTwo{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        .searchBar {
+            position: relative;
+            margin-right: 10px;
+
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.frontSalesViewBox {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.281);
+
+    .innerfrontSalesViewBox {
+        background: white;
+        border-radius: 20px;
+        background: linear-gradient(315deg, #1fd1f9 0%, $themeTxtColor 74%);
+        border: 5px solid white;
+        width: 30%;
+        padding: 0 20px;
+        position: relative;
+
+        h3 {
+            position: absolute;
+            right: 10px;
+
+            svg {
+                position: relative;
+                font-size: 25px;
+                color: $white;
+            }
+        }
+
+        h5 {
+            font-size: 25px;
+            margin-top: 10px;
+            color: $white;
+        }
+
+        >div {
+            overflow-y: scroll;
+            height: 220px;
+            // SCROLL BOX SCSS 
+            padding: 0 5px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $themeTxtColor;
+            }
+
+            .frontSalesfileItems {
+                background: $white;
+                box-shadow: 3px 9px 10px #80808099;
+                padding: 7px 5px;
+                border-radius: 10px;
+                margin: 10px 0;
+
+                .frontSalesfileFlex {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    img {
+                        height: 40px;
+                    }
+
+                    >svg {
+                        font-size: 40px
+                    }
+
+                    span {
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                        color: grey;
+                    }
+
+                    h5 {
+                        background: $lightgreycolor;
+                        padding: 10px;
+                        line-height: 0;
+                        border-radius: 50%;
+
+                        svg {
+                            font-size: 24px;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE ==================================================
+$breakpoint-tablet: 768px;
+
+@media screen and (max-width:992px) {
+    .frontSalesBox {
+        .frontSalesBoxHeadOne{
+            display: block;
+            font-size: 23px;
+            margin: 15px 0 0 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .innerfrontSalesBox {
+            justify-content: center;
+            .frontSalesBoxHeadTwo{
+                display: none;
+            }
+            .searchBar {
+                margin-top: 20px;
+                width: 90%;
+                margin-right: 0;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .frontSalesViewBox{
+        .innerfrontSalesViewBox{
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .frontSalesViewBox{
+        .innerfrontSalesViewBox{
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    .frontSalesBox {
+        .innerfrontSalesBox {
+            .btnBox {
+                button {
+                    margin: 10px 5px;
+                }
+
+                a {
+                    margin: 10px 5px;
+                }
+            }
+        }
+    }
+    .frontSalesViewBox{
+        .innerfrontSalesViewBox{
+            width: 95%;
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    .frontSalesBox{
+        margin-bottom: 200px !important
+    }
+}

@@ -1,0 +1,48 @@
+
+.paymentSection{
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    .paymentFormBox{
+        margin-top: 40px;
+        img{
+            height: 80px;
+            width: 100%;
+            object-fit: contain;
+        }
+        h5{
+            background: white;
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px 0;
+            border-radius: 5px;
+        }
+        .paymentItemsBox{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            word-break: break-all;
+            span{
+                color: white;
+                font-size: 18px;
+            }
+            h6{
+                display: flex;
+                align-items: center;
+                svg{
+                    color: white;
+                    font-size: 30px;
+                }
+                span{
+                    color: white;
+                    font-size: 18px;
+                    margin-left: 5px;
+                }
+            }
+          
+        }
+    }
+}

@@ -1,0 +1,200 @@
+.client_profileMainBox {
+  margin-top: 100px;
+  margin-bottom: 120px;
+  background: white;
+  border: 1px solid rgba(128, 128, 128, 0.3215686275);
+  border-radius: 8px;
+  box-shadow: -3px 6px 10px rgba(158, 158, 158, 0.5098039216);
+}
+.client_profileMainBox .client_leftProfileBox {
+  position: relative;
+  background: rgb(235, 230, 230);
+  padding: 0 0 30px 0;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftProfilePictureBox {
+  height: 85px;
+  width: 100%;
+  background-image: linear-gradient(to right, #064CDB, #2196f3);
+  display: flex;
+  justify-content: center;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftProfilePictureBox img {
+  height: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 110px;
+  position: absolute;
+  border-radius: 50%;
+  top: 26px;
+  border: 5px solid white;
+  box-shadow: 0px 3px 10px grey;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftProfileDesignationBox {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftProfileDesignationBox span {
+  font-size: 15px;
+  font-weight: 500;
+  word-break: break-all;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftProfileDesignationBox p {
+  margin: 0;
+  font-size: 12px;
+  word-break: break-all;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftInfoProfile {
+  margin-top: 16px !important;
+  box-shadow: 2px 4px 21px rgba(128, 128, 128, 0.2705882353);
+  padding: 15px 0px;
+  background: white;
+  margin: 0 20px;
+  border-radius: 10px;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftInfoProfile h6 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3215686275);
+  margin: 10px 0;
+  padding: 3px 0;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftInfoProfile h6 svg {
+  font-size: 43px;
+  margin: 0px 17px 0px 13px;
+  color: #064CDB;
+  padding: 11px;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftInfoProfile h6 .client_leftProfileInfoBox {
+  display: flex;
+  flex-direction: column;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftInfoProfile h6 .client_leftProfileInfoBox p {
+  margin: 0;
+  font-size: 12px;
+}
+.client_profileMainBox .client_leftProfileBox .client_leftInfoProfile h6 .client_leftProfileInfoBox span {
+  font-size: 14px;
+  margin-top: 5px;
+  word-break: break-all;
+}
+
+.client_rightSideProfileBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.client_rightSideProfileBox h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 15px 0 0 30px;
+}
+.client_rightSideProfileBox .client_rightPictureUploadBox {
+  width: 125px;
+  height: 125px;
+  border: 2px dashed rgba(128, 128, 128, 0.3803921569);
+  margin: 19px 33px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.client_rightSideProfileBox .client_rightPictureUploadBox svg {
+  font-size: 45px;
+  color: rgba(128, 128, 128, 0.3803921569);
+}
+.client_rightSideProfileBox .client_rightPictureUploadBox input {
+  cursor: pointer;
+  width: 125px;
+  height: 125px;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+}
+.client_rightSideProfileBox .client_rigthProfileInputBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+.client_rightSideProfileBox .client_rigthProfileInputBox .form-group input {
+  width: 100%;
+}
+.client_rightSideProfileBox .client_rigthProfileInputBox button {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+.client_rightSideProfileBox .client_rigthProfileInputBox button:focus {
+  color: #fff;
+}
+.client_rightSideProfileBox .client_rigthProfileInputBox button:hover {
+  color: #fff;
+  background: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.client_rightSideProfileBox .client_rigthProfileInputBox button:before {
+  content: "";
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.client_rightSideProfileBox .client_rigthProfileInputBox button:hover:before {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transform: scale(2) rotate(180deg);
+}
+
+@media (max-width: 992px) {
+  .client_rightSideProfileBox .client_rightPictureUploadBox {
+    width: 125px;
+    height: 125px;
+    border: 2px dashed rgba(128, 128, 128, 0.3803921569);
+    margin: 19px 33px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .client_rightSideProfileBox .client_rightPictureUploadBox svg {
+    font-size: 45px;
+    color: rgba(128, 128, 128, 0.3803921569);
+  }
+  .client_rightSideProfileBox .client_rightPictureUploadBox input {
+    cursor: pointer;
+    width: 125px;
+    height: 125px;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+  }
+  .client_rightSideProfileBox .client_rigthProfileInputBox {
+    display: block !important;
+  }
+  .client_rightSideProfileBox .client_rigthProfileInputBox .form-group input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .client_profileMainBox .client_leftProfileBox .client_leftInfoProfile h6 {
+    flex-direction: column !important;
+  }
+  .client_profileMainBox .client_leftProfileBox .client_leftInfoProfile .client_leftProfileInfoBox {
+    align-items: center;
+  }
+  .client_profileMainBox {
+    margin-bottom: 200px !important;
+  }
+}/*# sourceMappingURL=clientprofile.css.map */

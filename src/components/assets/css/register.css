@@ -1,0 +1,58 @@
+.registerFormSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerFormBox .registerFlexBox {
+  display: flex;
+  justify-content: space-between;
+}
+.registerFormBox .formRememberBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.registerFormBox .formRememberBox .form-check label {
+  font-weight: 600;
+  color: rgba(128, 128, 128, 0.658);
+}
+.registerFormBox .signInBtnBox button {
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 5px;
+  transition: 1ms;
+}
+.registerFormBox .signInBtnBox button:hover {
+  transition: 1ms;
+  background: #2196f3;
+  color: white;
+}
+.registerFormBox .signInBtnBox span {
+  margin-top: 20px;
+  font-weight: 500;
+  color: rgba(128, 128, 128, 0.658);
+}
+.registerFormBox .signInBtnBox span a {
+  margin-left: 5px;
+  color: rgba(128, 128, 128, 0.658);
+  text-decoration: underline !important;
+}
+
+@media screen and (max-width: 992px) {
+  .registerFormSection {
+    height: auto;
+  }
+  .registerformImgBox {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .registerFormBox .registerFlexBox {
+    flex-direction: column;
+  }
+  .registerFormBox .registerFlexBox .form-group label {
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=register.css.map */

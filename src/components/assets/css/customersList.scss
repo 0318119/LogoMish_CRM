@@ -1,0 +1,216 @@
+
+// COLORS ===========================================
+@import 'colors';
+
+
+// ALL CUSTOMER'S LIST SCSS  ========================================================
+
+
+.customersList{
+    margin-top: 100px;
+    box-shadow: 3px 6px 10px $shadowColor;
+    border-radius: 18px;
+    border: 2px solid $borderColor;
+    margin-bottom: 120px;
+    .customersListHeadOne{
+        display: none;
+    }
+
+    .innerCusListBox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .btnBox{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            button{
+                padding: 5px 10px;
+                margin: 0 5px;
+                height: 35px;
+                border-radius: 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+            a{
+                border-radius: 5px;
+                margin: 0 5px;
+                padding: 5px 10px;
+                height: 35px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+        .customersListHeadTwo{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .searchBar {
+            position: relative;
+            margin-right: 10px;
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+// ===================
+.customerListTag{
+    white-space: break-spaces;
+    line-height: 19px;
+    display: block;
+}
+
+// Discount Modal
+.customerMakeDiscountModal{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000056;
+    .customerMakeDisInnerModalBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $bgGradientColor;
+        position: relative;
+        padding: 0px 20px;
+        box-shadow: 5px 1px 10px grey;
+        border-radius: 10px;
+        border: 5px solid $white;
+        width: 50%;
+        .closeIco{
+            position: absolute;
+            right: 2%;
+            top: 7px;
+            color: white;
+            border: 2px solid white;
+            font-size: 23px;
+            padding: 2px;
+            border-radius: 20px;
+        }
+        h4{
+            font-size: 30px;
+            text-transform: capitalize;
+            text-align: center;
+            color: white;
+            margin: 20px 0;
+        }
+        .cusDisBtnBox{
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            button{
+                background: $white;
+                display: block;
+                margin: 11px auto 0 auto;
+                padding: 8px 18px;
+                border-radius: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+// RESPONSIVE ==================================================
+$breakpoint-tablet: 768px;
+@media screen and (max-width:992px){
+    .customersList{
+        .customersListHeadOne{
+            display: block;
+            font-size: 23px;
+            margin: 15px 0 0 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .innerCusListBox{
+            .customersListHeadTwo {
+                display: none;
+            }
+            justify-content: center;
+            .searchBar {
+                margin-top: 10px;
+                width: 90%;
+                margin-right: 0;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: $breakpoint-tablet) {
+    .customerMakeDiscountModal {
+        .customerMakeDisInnerModalBox {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .customerMakeDiscountModal {
+        .customerMakeDisInnerModalBox {
+            width: 95%;
+        }
+    }
+}
+
+@media screen and (max-width:420px){
+    .customersList{
+        .innerCusListBox{
+            .btnBox{
+                button{
+                    margin: 10px 5px;
+                }
+                a{
+                    margin: 10px 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .customerMakeDiscountModal{
+        .customerMakeDisInnerModalBox{
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    .customersList{
+        margin-bottom: 200px !important
+    }
+}

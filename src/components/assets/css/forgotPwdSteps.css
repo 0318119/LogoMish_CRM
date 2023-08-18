@@ -1,0 +1,218 @@
+.forgotpwdForgotStep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.forgotpwdStepsBox .logoBox {
+  background: #064CDB;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.forgotpwdStepsBox .logoBox img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 55px;
+  padding: 10px 18px;
+}
+.forgotpwdStepsBox .pwdSentBox button {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.forgotpwdStepsBox .pwdSentBox button:focus {
+  color: #fff;
+}
+.forgotpwdStepsBox .pwdSentBox button:hover {
+  color: #fff;
+  background: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.forgotpwdStepsBox .pwdSentBox button:before {
+  content: "";
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.forgotpwdStepsBox .pwdSentBox button:hover:before {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transform: scale(2) rotate(180deg);
+}
+
+.otpSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.otpSection .otpImgBox img {
+  height: 122px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  background: #2196F3;
+  padding: 9px 0;
+  margin: 40px 0 0 0;
+  border-radius: 20px;
+}
+.otpSection .otpBox .logoBox {
+  background: #064CDB;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.otpSection .otpBox .logoBox img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 55px;
+  padding: 10px 18px;
+}
+.otpSection .otpBox label {
+  font-size: 30px;
+}
+.otpSection .otpBox button {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.otpSection .otpBox button:focus {
+  color: #fff;
+}
+.otpSection .otpBox button:hover {
+  color: #fff;
+  background: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.otpSection .otpBox button:before {
+  content: "";
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.otpSection .otpBox button:hover:before {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transform: scale(2) rotate(180deg);
+}
+
+.forgotpwdChangeStep .forgotpwdChangeStepInnerBox .logoBox {
+  background: #064CDB;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.forgotpwdChangeStep .forgotpwdChangeStepInnerBox .logoBox img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 55px;
+  padding: 10px 18px;
+}
+.forgotpwdChangeStep .forgotpwdChangeStepInnerBox .form-group {
+  position: relative;
+}
+.forgotpwdChangeStep .forgotpwdChangeStepInnerBox .form-group input {
+  position: relative;
+}
+.forgotpwdChangeStep .forgotpwdChangeStepInnerBox .form-group img {
+  position: absolute;
+  height: 20px;
+  top: 41px;
+  right: 10px;
+}
+.forgotpwdChangeStep .forgotpwdChangeStepInnerBox .pwdChangebtn button {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.forgotpwdChangeStep .forgotpwdChangeStepInnerBox .pwdChangebtn button:focus {
+  color: #fff;
+}
+.forgotpwdChangeStep .forgotpwdChangeStepInnerBox .pwdChangebtn button:hover {
+  color: #fff;
+  background: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.forgotpwdChangeStep .forgotpwdChangeStepInnerBox .pwdChangebtn button:before {
+  content: "";
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.forgotpwdChangeStep .forgotpwdChangeStepInnerBox .pwdChangebtn button:hover:before {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transform: scale(2) rotate(180deg);
+}
+
+@media screen and (max-width: 992px) {
+  .formImgBox {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .otpCol {
+    max-width: unset !important;
+    width: 100%;
+    flex: unset !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  .forgotpwdStepsBox .logoBox {
+    padding: 10px 10px;
+  }
+  .forgotpwdStepsBox .logoBox img {
+    height: 45px;
+    padding: 5px 10px;
+  }
+  .forgotpwdStepsBox .pwdSentBox button {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+  .otpSection .otpBox .logoBox {
+    padding: 10px 10px;
+  }
+  .otpSection .otpBox .logoBox img {
+    height: 45px;
+    padding: 5px 10px;
+  }
+  .forgotpwdChangeStep .forgotpwdChangeStepInnerBox .logoBox {
+    padding: 10px 10px;
+  }
+  .forgotpwdChangeStep .forgotpwdChangeStepInnerBox .logoBox img {
+    height: 45px;
+    padding: 5px 10px;
+  }
+  .forgotpwdChangeStep .pwdChangebtn button {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=forgotPwdSteps.css.map */

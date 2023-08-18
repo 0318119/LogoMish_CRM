@@ -1,0 +1,133 @@
+.client_sideBarBox {
+  background: #064CDB;
+  padding-left: 10px;
+  width: 220px;
+  position: fixed;
+  z-index: 9999;
+}
+.client_sideBarBox .client_logoBox .client_barIco {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  display: none;
+}
+.client_sideBarBox .client_logoBox .client_barIco svg {
+  color: white;
+  position: absolute;
+  right: 0;
+  font-size: 29px;
+  top: -16px;
+}
+.client_sideBarBox .client_logoBox a {
+  display: flex;
+  justify-content: center;
+}
+.client_sideBarBox .client_logoBox a > img {
+  height: 83px;
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.client_sideBarBox .client_menuBox ul li {
+  display: flex;
+  align-items: center;
+}
+.client_sideBarBox .client_menuBox ul li a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 39px;
+  font-size: 11px;
+  padding: 0 8px;
+  width: -webkit-fill-available;
+  margin-right: 10px;
+}
+.client_sideBarBox .client_menuBox ul svg {
+  color: white;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.client_sideBarBox {
+  height: 100vh;
+  position: fixed;
+}
+
+.client_scrollBoxSideBar {
+  position: relative;
+  background: #000;
+}
+
+.client_sideBarBox::-webkit-scrollbar-track {
+  background-color: #064CDB;
+}
+
+.client_sideBarBox::-webkit-scrollbar {
+  width: 5px;
+}
+
+.client_sideBarBox::-webkit-scrollbar-thumb {
+  background-color: #0ae;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, transparent), to(transparent));
+}
+
+#client_sideBarShow {
+  width: 220px;
+}
+
+#client_sideBarHide {
+  width: 60px;
+}
+#client_sideBarHide .client_menuBox ul li {
+  justify-content: center;
+}
+#client_sideBarHide .client_menuBox ul li .sideBarLinksActive.active {
+  background: transparent !important;
+}
+#client_sideBarHide .client_menuBox ul li .sideBarLinksActive.active svg {
+  color: rgba(31, 30, 30, 0.9019607843);
+}
+#client_sideBarHide .client_menuBox ul li svg {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#client_sideBarHide .client_menuBox ul li #hideTxt {
+  display: none;
+}
+
+#client_scrollBoxSideBarShow {
+  width: 250px;
+}
+
+#client_scrollBoxSideBarHide {
+  width: 60px;
+}
+
+#client_showLogo {
+  display: block;
+}
+
+#client_hideLogo {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .client_scrollBoxSideBar {
+    position: absolute;
+  }
+  #client_sideBarHide {
+    width: 0;
+    left: -85%;
+  }
+  .client_logoBox .client_barIco {
+    display: block !important;
+  }
+  #client_scrollBoxSideBarHide {
+    width: 0;
+    left: -85%;
+  }
+  #client_scrollBoxSideBarHide .client_logoBox .client_barIco svg {
+    display: none;
+  }
+}/*# sourceMappingURL=clientsideBar.css.map */

@@ -1,0 +1,89 @@
+.visitorsChartHead {
+  font-size: 20px;
+  color: #a2a5bd;
+}
+
+.visitorsChart {
+  box-shadow: 2px 2px 10px rgba(158, 158, 158, 0.5098039216);
+  padding: 16px 10px;
+  border-radius: 10px;
+}
+.visitorsChart .innerVisitChartBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+  border-radius: 10px;
+}
+.visitorsChart .chart {
+  width: 50% !important;
+}
+
+.visitorsChart .visitCountPerWeek {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.visitorsChart .visitCountPerWeek h6 {
+  font-size: 33px;
+}
+.visitorsChart .visitCountPerWeek span {
+  font-size: 15px;
+  color: #a2a5bd;
+}
+
+.earningChartBox {
+  box-shadow: 2px 2px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+.earningChartBox .earningPerDayBox h3 {
+  color: black;
+  margin: 0;
+  font-size: 22px;
+}
+.earningChartBox .earningPerDayBox span {
+  font-size: 13px;
+  color: #a2a5bd;
+}
+
+.SalesProgress {
+  box-shadow: 2px 2px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-top: 50px;
+}
+.SalesProgress .SalesProgressHead {
+  margin: 10px 0;
+}
+.SalesProgress .SalesProgressHead span {
+  color: #a2a5bd;
+}
+.SalesProgress .SalesProgressHead h5 {
+  margin: 5px 0;
+}
+
+.OneMonSalesProgress {
+  box-shadow: 2px 2px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-top: 50px;
+}
+.OneMonSalesProgress .OneMonSalesProgressHead {
+  margin: 10px 0;
+}
+.OneMonSalesProgress .OneMonSalesProgressHead span {
+  color: #a2a5bd;
+}
+.OneMonSalesProgress .OneMonSalesProgressHead h5 {
+  margin: 5px 0;
+}
+.OneMonSalesProgress .OneMonSalesProgressHead .OneMonInnerBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.OneMonSalesProgress .OneMonSalesProgressHead .OneMonInnerBox span {
+  font-size: 13px;
+}/*# sourceMappingURL=homeFile.css.map */

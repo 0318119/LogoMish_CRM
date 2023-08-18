@@ -1,0 +1,47 @@
+// COLORS ===========================================
+@import 'colors';
+
+.client_orderReqMainBox{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: white;
+    width: 100%;
+    .client_orderReqBtnBox{
+        display: flex;
+        justify-content: space-around;
+        button{
+            background: $lightBlue;
+            color: $white;
+            padding: 10px 30px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+        }
+        .client_searchBar {
+            position: relative;
+            margin-right: 10px;
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .client_comminutionBox{
+        border-top: 1px solid $borderColor;
+    }
+
+}

@@ -1,0 +1,134 @@
+.client_orderReplyMainBox {
+  background: rgba(128, 128, 128, 0.3215686275);
+  padding: 20px 5px;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+.client_orderReplyMainBox .client_orderReplyProfileBox {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.client_orderReplyMainBox .client_orderReplyProfileBox .client_orderReplyProfileInnerBox {
+  display: flex;
+  align-items: center;
+}
+.client_orderReplyMainBox .client_orderReplyProfileBox .client_orderReplyProfileInnerBox img {
+  border-radius: 50%;
+}
+.client_orderReplyMainBox .client_orderReplyProfileBox .client_orderReplyProfileInnerBox h5 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.client_orderReplyMainBox .client_orderReplyProfileBox .client_orderReplyProfileInnerBox h5 span {
+  color: #607D8B;
+  font-size: 12px;
+}
+.client_orderReplyMainBox .client_orderReplyProfileBox .client_orderReplyTimeBox span {
+  color: #607D8B;
+  font-size: 14px;
+}
+.client_orderReplyMainBox .client_orderReplyProfileBox .client_orderReplyTimeBox span:nth-child(2) {
+  margin-left: 10px;
+}
+.client_orderReplyMainBox .client_orderReplyDesBox {
+  background: white;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+.client_orderReplyMainBox .client_orderReplyDesBox .client_orderReplyDesBody span {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3215686275);
+  display: block;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.client_orderReplyMainBox .client_orderReplyDesBox .client_orderReplyDesBody p {
+  margin-top: 15px;
+  word-break: break-all;
+}
+.client_orderReplyMainBox .client_orderReplyDesBox .client_orderReplyBox {
+  word-wrap: break-word;
+}
+.client_orderReplyMainBox .client_orderReplyDesBox .client_orderReplyBox h6 {
+  font-size: 15px;
+  color: grey;
+}
+.client_orderReplyMainBox .client_orderReplyDesBox .client_orderReplyBox li {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+.client_orderReplyMainBox .client_orderReplyDesBox .client_orderReplyBox li span {
+  display: none;
+  margin-left: 10px;
+  background: rgba(128, 128, 128, 0.459);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.client_orderReplyMainBox .client_orderReplyDesBox .client_orderReplyBox li:hover span {
+  display: inline-block;
+}
+.client_orderReplyMainBox .client_orderReplyDesBox .client_orderReplyBtnBox {
+  margin-top: 50px;
+}
+.client_orderReplyMainBox .client_orderReplyDesBox .client_orderReplyBtnBox button {
+  background: #064CDB;
+  border-radius: 10px;
+  padding: 5px 30px;
+  color: white;
+}
+
+.client_orderReplyBoxModal {
+  position: fixed;
+  background: white;
+  width: 50%;
+  right: 20px;
+  bottom: 24px;
+  z-index: 9999;
+  box-shadow: -4px -4px 10px rgba(158, 158, 158, 0.2705882353);
+  padding: 13px 13px;
+}
+.client_orderReplyBoxModal h5 {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3215686275);
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 5px;
+  color: grey;
+}
+.client_orderReplyBoxModal textarea {
+  height: 174px;
+  width: 100%;
+  border-color: rgba(128, 128, 128, 0.3215686275);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.client_orderReplyBoxModal textarea:focus {
+  outline: none;
+}
+.client_orderReplyBoxModal .client_orderreplyModalbtnBox {
+  display: flex;
+  margin-bottom: 20px;
+}
+.client_orderReplyBoxModal .client_orderreplyModalbtnBox button {
+  background: #064CDB;
+  padding: 8px 30px;
+  color: white;
+  border-radius: 10px;
+  margin: 0 10px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 380px) {
+  .client_orderReplyMainBox {
+    margin-bottom: 230px !important;
+  }
+  .client_orderReplyMainBox .client_orderReplyProfileBox .client_orderReplyProfileInnerBox h5 span {
+    word-break: break-all;
+  }
+}/*# sourceMappingURL=clientOrderReply.css.map */

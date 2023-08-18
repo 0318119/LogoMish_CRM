@@ -1,0 +1,68 @@
+// COLORS ===========================================
+@import 'colors';
+
+
+.DashBoxesSection {
+    margin-top: 100px;
+}
+
+.dashBoxes {
+    box-shadow: 0px 0px 12px 6px $shadowColor;
+    padding: 30px 20px;
+    border-radius: 8px;
+
+    h4 {
+        svg {
+            margin-right: 15px;
+            font-size: 42px;
+            border: 1px dashed;
+            border-radius: 20px;
+            padding: 3px 4px;
+        }
+
+        span {
+            font-size: 22px;
+        }
+    }
+
+    h5 {
+        margin-top: 10px;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        border-bottom: 1px dashed;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+}
+
+
+// RESPONSIVE ======================================================================== 
+$breakpoint-large: 992px;
+$breakpoint-extra-medium: 575px;
+$breakpoint-420: 420px;
+
+
+@media screen and (max-width: $breakpoint-large){
+    .dashBoxesResponsive{
+        max-width: unset !important;
+        flex: unset !important;
+        width: 50% !important;
+        margin: 23px 0;
+    }
+}
+@media screen and (max-width: $breakpoint-extra-medium){
+    .dashBoxes {
+        h4 {
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-420){
+    .dashBoxesResponsive{
+        width: 100% !important;
+    }
+}

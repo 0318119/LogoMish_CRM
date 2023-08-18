@@ -1,0 +1,102 @@
+
+// COLORS ===========================================
+@import 'colors';
+
+
+// ALL CUSTOMER'S LIST SCSS  ========================================================
+
+.client_disputeOrders{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 3px 6px 10px $shadowColor;
+    border-radius: 18px;
+    border: 2px solid $borderColor;
+
+    .client_innerDisputeOrdersBox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .client_btnBox{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            button{
+                padding: 5px 10px;
+                margin: 0 5px;
+                height: 35px;
+                border-radius: 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+            a{
+                border-radius: 5px;
+                margin: 0 5px;
+                padding: 5px 10px;
+                height: 35px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+        .client_searchBar {
+            position: relative;
+            margin-right: 10px;
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE ==========================================================
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+    .client_disputeOrders{
+        .client_innerDisputeOrdersBox{
+            justify-content: center;
+            .client_searchBar {
+                margin-top: 20px;
+                width: 90%;
+                margin-right: 0;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px){
+    .client_disputeOrders{
+        .client_innerDisputeOrdersBox{
+            .client_btnBox{
+                button{
+                    margin: 10px 5px;
+                }
+                a{
+                    margin: 10px 5px;
+                }
+            }
+        }
+    }
+}

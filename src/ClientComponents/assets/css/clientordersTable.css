@@ -1,0 +1,235 @@
+.client_orderBox {
+  margin-top: 100px;
+  box-shadow: 3px 6px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 18px;
+  border: 2px solid rgba(128, 128, 128, 0.3215686275);
+  margin-bottom: 120px;
+}
+.client_orderBox .client_orderBoxHeadOne {
+  display: none;
+}
+.client_orderBox .client_addOrdersBtn {
+  background: #2196f3;
+  color: white;
+  margin-top: 30px;
+  margin-left: 5px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+.client_orderBox .client_innerOrderBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.client_orderBox .client_innerOrderBox .client_btnBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.client_orderBox .client_innerOrderBox .client_btnBox button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  height: 35px;
+  border-radius: 5px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.client_orderBox .client_innerOrderBox .client_btnBox a {
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  height: 35px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.client_orderBox .client_innerOrderBox .client_orderBoxHeadTwo {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.client_orderBox .client_innerOrderBox .client_searchBar {
+  position: relative;
+  margin-right: 10px;
+}
+.client_orderBox .client_innerOrderBox .client_searchBar svg {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.3215686275);
+}
+.client_orderBox .client_innerOrderBox .client_searchBar input {
+  letter-spacing: 1px;
+  border: none;
+  background: rgba(158, 158, 158, 0.1607843137);
+  border-radius: 5px;
+  padding: 10px 17px 10px 30px;
+}
+.client_orderBox .client_innerOrderBox .client_searchBar input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.client_orderBox .client_innerOrderBox .client_searchBar input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+
+.client_oneMonthOrderBox {
+  margin-top: 20px;
+  box-shadow: 3px 6px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 18px;
+  border: 2px solid rgba(128, 128, 128, 0.3215686275);
+  margin-bottom: 120px;
+}
+.client_oneMonthOrderBox .desktopViewHead {
+  display: block;
+  font-size: 23px;
+  margin: 15px 0 0 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.client_oneMonthOrderBox .MobileViewHead {
+  display: none;
+  font-size: 23px;
+  margin: 15px 0 0 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.client_oneMonthOrderBox .client_innerOrderBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.client_oneMonthOrderBox .client_innerOrderBox .client_btnBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.client_oneMonthOrderBox .client_innerOrderBox .client_btnBox button {
+  padding: 5px 10px;
+  height: 35px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.client_oneMonthOrderBox .client_innerOrderBox .client_btnBox a {
+  border-radius: 5px;
+  padding: 5px 10px;
+  height: 35px;
+  margin: 0 5px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.client_oneMonthOrderBox .client_innerOrderBox .client_searchBar {
+  position: relative;
+  margin-right: 10px;
+}
+.client_oneMonthOrderBox .client_innerOrderBox .client_searchBar svg {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.3215686275);
+}
+.client_oneMonthOrderBox .client_innerOrderBox .client_searchBar input {
+  letter-spacing: 1px;
+  border: none;
+  background: rgba(158, 158, 158, 0.1607843137);
+  border-radius: 5px;
+  padding: 10px 17px 10px 30px;
+}
+.client_oneMonthOrderBox .client_innerOrderBox .client_searchBar input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.client_oneMonthOrderBox .client_innerOrderBox .client_searchBar input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+
+.allOrdersDetailsTag {
+  white-space: break-spaces;
+  line-height: 19px;
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .client_orderBox .client_orderBoxHeadOne {
+    display: block;
+    font-size: 23px;
+    margin: 15px 0 0 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .client_orderBox .client_innerOrderBox {
+    justify-content: center;
+  }
+  .client_orderBox .client_innerOrderBox .client_orderBoxHeadTwo {
+    display: none;
+  }
+  .client_orderBox .client_innerOrderBox .client_searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .client_orderBox .client_innerOrderBox .client_searchBar input {
+    width: 100%;
+  }
+  .client_oneMonthOrderBox .desktopViewHead {
+    display: none;
+  }
+  .client_oneMonthOrderBox .MobileViewHead {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .client_oneMonthOrderBox .client_innerOrderBox {
+    justify-content: center;
+  }
+  .client_oneMonthOrderBox .client_innerOrderBox .client_searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .client_oneMonthOrderBox .client_innerOrderBox .client_searchBar input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .client_orderBox .client_innerOrderBox .client_btnBox button {
+    margin: 10px 5px;
+  }
+  .client_orderBox .client_innerOrderBox .client_btnBox a {
+    margin: 10px 5px;
+  }
+  .client_oneMonthOrderBox .client_innerOrderBox .client_btnBox button {
+    margin: 10px 5px;
+  }
+  .client_oneMonthOrderBox .client_innerOrderBox .client_btnBox a {
+    margin: 10px 5px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .client_orderBox {
+    margin-bottom: 200px !important;
+  }
+  .client_oneMonthOrderBox {
+    margin-bottom: 200px !important;
+  }
+}/*# sourceMappingURL=clientordersTable.css.map */

@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #F8F8F8 !important;
+}
+h1{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+h2{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+h3{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+h4{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+h5{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+h6{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+ul{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+li{
+    padding: 0;
+    margin: 0%;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+input{
+    font-family: 'Ubuntu', sans-serif;
+}
+b{
+    font-family: 'Ubuntu', sans-serif;
+}
+span{
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+}
+img{
+    cursor: pointer;
+}
+svg{
+    cursor: pointer;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+a{
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: none !important;
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+input{
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-family: 'Ubuntu', sans-serif;
+}
+textarea{
+    width: 100%;
+}
+textarea:focus{
+    outline: none;
+    border: none;
+}
+/* PAGES CLASSES ============================= */
+.allPages{
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow-x: clip;
+}
+
+.allPages .innerBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+/* GLOBAL LOADER CSS ================================== */
+
+.loaderBox{
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    background: #3f51b50d;
+    padding: 80px 0;
+}
+
+.loaderBox span{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: grey;
+    font-size: 25px;
+}
+.loader{
+    width: 100px;
+    height: 100px;
+    margin: 40px auto 0;
+    position: relative;
+    animation: animate 1s infinite;
+}
+
+.loader div{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    position: absolute;
+    animation: speed 2s infinite ease-in-out;
+}
+
+.loader .one{
+    background: #afc531;
+    animation-delay: 1.5s;
+}
+
+.loader .two{
+    background: #a11cc7;
+    animation-delay: 1s;
+}
+
+.loader .three{
+    background: #058fd4;
+    animation-delay: 0.5s;
+}
+
+.loader .four{ background: #f05151; }
+
+@keyframes speed{
+    0%{
+        border-radius: 50%;
+        transform: translate(0%);
+    }
+    25%{
+        border-radius: 0;
+        transform: translate(150%) scale(0.5);
+    }
+    50%{
+        border-radius: 50%;
+        transform: translate(150%, 150%);
+    }
+    75%{
+        border-radius: 0;
+        transform: translate(0, 150%) scale(0.5);
+    }
+}
+
+/* =================================================== */
+.hXLGuA{
+    border-radius:  0 !important;
+}
+.hXLGuA::-webkit-scrollbar-track{
+	background-color: #F5F5F5;
+}
+.hXLGuA::-webkit-scrollbar{
+    height: 6px;
+	background-color: #F5F5F5;
+}
+.hXLGuA::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+	background-color: #2196f3;
+}
+
+.dataTableBox .dataTableFlexBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dataTableBox .dataTableFlexBox h5 img{
+    height: 31px;
+    display: block;
+    object-fit: contain;
+    margin: 10px 0;
+}
+.dataTableBox .dataTableFlexBox h6{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.dataTableBox .dataTableFlexBox .tableName{
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+}
+.dataTableBox .dataTableFlexBox .tableEmail{
+    font-size: 12px;
+    color: #aba3a3;
+    margin-top: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+}
+.pacDetailsBox{
+    display: flex;
+    flex-direction: column;
+}
+.pacDetailsBox .package_name{
+    line-height: 17px;
+    white-space: break-spaces;
+}
+.dataTableIconBox button{
+    background: transparent;
+}
+.dataTableIconBox button svg{
+    font-size: 25px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 2px 3px;
+}
+.dataTableIconBox button svg.fileViewIcon{
+    color: #2196F3;
+}
+.dataTableIconBox a svg{
+    font-size: 28px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.dataTableIconBox .updateAlert svg{
+    color: #E91E63;
+    font-size: 30px;
+}
+.dataTableIconBox .deleteAlert svg{
+    color: red;
+    font-size: 30px;
+}
+.dataTableIconBox .sentAlert svg{
+    color: #5db55d;
+}
+.dataTableIconBox .commintBtn svg{
+    color: #2196F3;
+}
+.dataTableIconBox .paymentBtn svg{
+    color: #2196F3;
+}
+.dataTableIconBox .updateAlert svg{
+    color: #E91E63;
+}
+.dataTableBox .commonOrderbtn{
+    padding: 6px 7px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: white;
+    background: #2196f3;
+    border-radius: 3px;
+}
+.dataTableIconBox a svg.OrderViewIco{
+    color: #2196F3;
+    padding: 2px 3px;
+}
+.dataTableBox img{
+    height: 25px;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    margin: 10px 0;
+}
+.dataTableBox .profilePicture{
+    height: 66px;
+    width: 65px;
+    border-radius: 70%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    padding: 5px 4px;
+}
+.dataTableBox select{
+    border: 1px solid lightgrey;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.notFoundMsg{
+    color: #8080809e;
+    background: transparent !important;
+}
+/* ============================================= */
+.askLoginBtnBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.askLoginBtnBox > div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.askLoginBtnBox > div button a{
+    color: white;
+}
+.askLoginBtnBox > div button a:hover{
+    color: white;
+}
+
+/* =============================== */
+/* PAGE NOT CSS ======================== */
+.notfound-404{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notfound-404 .notfound-404-inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.notfound-404 .notfound-404-inner h1{
+    font-size: 224px;
+    font-weight: 900;
+    margin-left: -12px;
+    color: #030005;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #8400ff, 1px 1px 0 #ff005a;
+    letter-spacing: -20px;
+}
+
+.notfound-404 .notfound-404-inner h2{
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 2px 0 #8400ff;
+    letter-spacing: 13px;
+    margin: 0;
+    position: absolute;
+    top: 59%;
+}
+/* SIDEBAR LINK ACTIVE CLASS */
+.sideBarLinksActive.active{
+    background: #1f1e1ee6;
+    border-radius: 5px;
+}
+@media screen and (max-width: 575px){
+    .notfound-404 .notfound-404-inner h2{
+        font-size: 30px;
+        text-align: center;
+        top: 59%;
+    }
+}
+@media screen and (max-width: 575px){
+    .notfound-404 .notfound-404-inner h1{
+        font-size: 150px;
+    }
+}
+
+/* ============================================== */
+.dashboraHead{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* PAYPAL BUTTON CSS =-=-=-=-=-=-=-=-=-=-=-= */
+#paypal-button-container > .paypal-buttons{
+    display: block !important;
+}
+/* =-=-=-=-=-= */
+.printTableHead tr th{
+    padding: 0 4px;
+}
+.printTableBody tr td{
+    word-break: break-all;
+    margin: 21px 1px;
+    padding: 0 9px;
+}
+/* ========================== */
+#scrollBody{
+    /* height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; */
+}

@@ -1,0 +1,119 @@
+.addLeadsModalBox {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 36, 36, 0.397);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.addLeadsModalBox .addLeadsBox {
+  position: relative;
+  width: 40%;
+  background: white;
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+.addLeadsModalBox .addLeadsBox::before {
+  content: "";
+  position: absolute;
+  height: 98%;
+  width: 98%;
+  top: 5px;
+  left: 5px;
+  border: 3px solid lightgray;
+  padding: 42px 22px;
+  border-radius: 11px;
+}
+.addLeadsModalBox .addLeadsBox h4 {
+  background: #064CDB;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+}
+.addLeadsModalBox .addLeadsBox h4 img {
+  height: 40px;
+}
+.addLeadsModalBox .addLeadsBox .leadsScrollBox {
+  overflow-y: scroll;
+  height: 360px;
+  padding: 0 15px;
+  z-index: 9999;
+  position: relative;
+}
+.addLeadsModalBox .addLeadsBox .leadsScrollBox::-webkit-scrollbar-track {
+  background-color: white;
+}
+.addLeadsModalBox .addLeadsBox .leadsScrollBox::-webkit-scrollbar {
+  width: 4px;
+  background-color: #F5F5F5;
+}
+.addLeadsModalBox .addLeadsBox .leadsScrollBox::-webkit-scrollbar-thumb {
+  background-color: #064CDB;
+}
+.addLeadsModalBox .addLeadsBox .inneraddLeadsBox label {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+.addLeadsModalBox .addLeadsBox .inneraddLeadsBox select {
+  height: 37px;
+  position: relative;
+}
+.addLeadsModalBox .addLeadsBox .inneraddLeadsBox select option.defaultValueOptionTag {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.addLeadsModalBox .addLeadsBox .inneraddLeadsBox input {
+  width: 100%;
+}
+.addLeadsModalBox .addLeadsBox .addLeadsBtnBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 9999;
+  position: relative;
+}
+.addLeadsModalBox .addLeadsBox .addLeadsBtnBox button:nth-child(1) {
+  background: #fd5d93;
+  color: white;
+}
+.addLeadsModalBox .addLeadsBox .addLeadsBtnBox button {
+  margin: 0 10px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 992px) {
+  .addLeadsModalBox .addLeadsBox {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .addLeadsModalBox .addLeadsBox {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .addLeadsModalBox .addLeadsBox {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .addLeadsModalBox .addLeadsBox::before {
+    left: 3px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .addLeadsModalBox .addLeadsBox .addLeadsBtnBox button {
+    margin: 0 5px;
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=addLeadsModal.css.map */

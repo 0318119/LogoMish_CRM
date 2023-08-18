@@ -1,0 +1,281 @@
+
+// COLORS ===========================================
+@import 'colors';
+
+
+// CUSTOMER'S LIST SCSS  ========================================================
+
+.userListBox{
+    margin-top: 100px;
+    box-shadow: 3px 6px 10px $shadowColor;
+    border-radius: 18px;
+    border: 2px solid $borderColor;
+    margin-bottom: 120px;
+    .userListBoxHeadOne{
+        display: none;
+    }
+    .innerUserListBox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .btnBox{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .addUserBtn{
+                display: flex;
+                align-items: center;
+                color: $white;
+                svg{
+                    font-size: 25px;
+                    margin-right: 5px;
+                }
+            }
+            button{
+                padding: 5px 10px;
+                margin: 0 5px;
+                height: 35px;
+                border-radius: 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+            a{
+                border-radius: 5px;
+                margin: 0 5px;
+                padding: 5px 10px;
+                height: 35px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+        .userListBoxHeadTwo{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .searchBar {
+            position: relative;
+            margin-right: 10px;
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .actionsBtns{
+        width: 100%;
+        button{
+            padding: 5px 6px;
+            margin: 5px 5px;
+            color: $white;
+            border-radius: 5px;
+            svg{
+                font-size: 20px;
+            }
+        }
+        .upadteBtn{
+            background: #fd5d93;
+            &:hover{
+                background: #f02468;
+            }
+        }
+        .deleteBtn{
+            background: #ec250d;
+            &:hover{
+                background: #db220e;
+            }
+        }
+    }
+}
+
+span.persmissionsTag{
+    padding: 5px 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: $white;
+    font-size: 12px;
+}
+
+.veiwPer{
+    background: #E91E63;
+}
+.updatePer{
+    background: #00f2c3;
+}
+.deletePer{
+    background: #ec250d;
+}
+
+span.userStatusTag{
+    background: $lightgreycolor;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 5px 7px;
+    font-size: 11px;
+}
+
+// DELETE ALERT BOX =======================================
+.userDeleteAlertBox{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000056;
+    .userDeleteAlertBoxInner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        position: relative;
+        padding: 36px 46px;
+        box-shadow: 5px 1px 10px grey;
+        border-radius: 10px;
+        .userDeletAlertIconBox{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            background: #ff00000a;
+            padding: 17px 0;
+            border-radius: 10px;
+            svg{
+                font-size: 100px;
+                color: #ffc107;
+                border: 5px solid #ffc107;
+                border-radius: 17px;
+            }
+        }
+        span{
+            font-size: 17px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .userDeleteBtnBox{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            button{
+                color:#fff;
+                text-transform: uppercase;
+                padding: 7px 10px;
+                overflow: hidden;
+                border-radius: 5px;
+                position: relative;
+                z-index: 1;
+                transition: all 0.3s ease;
+            }
+            button:focus{ color: #fff; }
+            button:hover{
+                color: #fff;
+                background: transparent;
+                text-shadow: 0 0 5px rgba(0,0,0,0.5);
+            }
+            button:before{
+                content: "";
+                background: linear-gradient(315deg, #1fd1f9 0%, $themeTxtColor 74%);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all 0.3s ease 0s;
+            }
+            button:hover:before{ 
+                box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                            -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                            inset -4px -4px 6px 0 rgba(255,255,255,.5),
+                            inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+                transform: scale(2) rotate(180deg);
+            }
+        }
+    }
+}
+
+// RESPONSIVE ====================================================================
+$breakpoint-tablet: 768px;
+@media screen and (max-width: 992px) {
+    .userListBox{
+        .userListBoxHeadOne{
+            display: block;
+            font-size: 23px;
+            margin: 15px 0 0 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .innerUserListBox{
+            justify-content: center;
+            .userListBoxHeadTwo{
+                display: none;
+            }
+            .searchBar {
+                margin-top: 20px;
+                width: 90%;
+                margin-right: 0;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px){
+    .userListBox{
+        .innerUserListBox{
+            .btnBox{
+                button{
+                    margin: 10px 5px;
+                }
+                a{
+                    margin: 10px 5px;
+                }
+            }
+        }
+    }
+
+    .userDeleteAlertBox{
+        .userDeleteAlertBoxInner{
+            .userDeletAlertIconBox{
+                svg{
+                    font-size: 50px;
+                    border: 2px solid #ffc107;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    .userListBox{
+        margin-bottom: 200px !important
+    }
+}

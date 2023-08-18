@@ -1,0 +1,62 @@
+// COLORS ===========================================
+@import 'colors';
+
+
+.client_footerBox{
+    margin-top: 50px;
+    box-shadow: 1px -3px 12px $shadowColor;
+    padding: 10px 35px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        li{
+            a{
+                color: black;
+            }
+        }
+    }
+    span.client_footerTagLine{
+        margin-top: 20px;
+        text-align: center;
+        display: block;
+        a{
+            text-decoration: underline !important;
+        }
+    }
+}
+
+
+// RESPONSIVE ================================================
+$breakpoint-tablet: 768px;
+@media screen and (max-width: 480px){
+    .client_footerBox{
+        ul{
+            li{
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+        span.client_footerTagLine{
+            font-size: 14px;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px){
+    .client_footerBox{
+        ul{
+            justify-content: space-between;
+            li{
+            }
+        }
+    }
+}

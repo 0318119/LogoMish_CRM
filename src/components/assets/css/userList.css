@@ -1,0 +1,260 @@
+.userListBox {
+  margin-top: 100px;
+  box-shadow: 3px 6px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 18px;
+  border: 2px solid rgba(128, 128, 128, 0.3215686275);
+  margin-bottom: 120px;
+}
+.userListBox .userListBoxHeadOne {
+  display: none;
+}
+.userListBox .innerUserListBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.userListBox .innerUserListBox .btnBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.userListBox .innerUserListBox .btnBox .addUserBtn {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.userListBox .innerUserListBox .btnBox .addUserBtn svg {
+  font-size: 25px;
+  margin-right: 5px;
+}
+.userListBox .innerUserListBox .btnBox button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  height: 35px;
+  border-radius: 5px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.userListBox .innerUserListBox .btnBox a {
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  height: 35px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.userListBox .innerUserListBox .userListBoxHeadTwo {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.userListBox .innerUserListBox .searchBar {
+  position: relative;
+  margin-right: 10px;
+}
+.userListBox .innerUserListBox .searchBar svg {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.3215686275);
+}
+.userListBox .innerUserListBox .searchBar input {
+  letter-spacing: 1px;
+  border: none;
+  background: rgba(158, 158, 158, 0.1607843137);
+  border-radius: 5px;
+  padding: 10px 17px 10px 30px;
+}
+.userListBox .innerUserListBox .searchBar input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.userListBox .innerUserListBox .searchBar input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.userListBox .actionsBtns {
+  width: 100%;
+}
+.userListBox .actionsBtns button {
+  padding: 5px 6px;
+  margin: 5px 5px;
+  color: white;
+  border-radius: 5px;
+}
+.userListBox .actionsBtns button svg {
+  font-size: 20px;
+}
+.userListBox .actionsBtns .upadteBtn {
+  background: #fd5d93;
+}
+.userListBox .actionsBtns .upadteBtn:hover {
+  background: #f02468;
+}
+.userListBox .actionsBtns .deleteBtn {
+  background: #ec250d;
+}
+.userListBox .actionsBtns .deleteBtn:hover {
+  background: #db220e;
+}
+
+span.persmissionsTag {
+  padding: 5px 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+}
+
+.veiwPer {
+  background: #E91E63;
+}
+
+.updatePer {
+  background: #00f2c3;
+}
+
+.deletePer {
+  background: #ec250d;
+}
+
+span.userStatusTag {
+  background: rgba(128, 128, 128, 0.3215686275);
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 5px 7px;
+  font-size: 11px;
+}
+
+.userDeleteAlertBox {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.337254902);
+}
+.userDeleteAlertBox .userDeleteAlertBoxInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  position: relative;
+  padding: 36px 46px;
+  box-shadow: 5px 1px 10px grey;
+  border-radius: 10px;
+}
+.userDeleteAlertBox .userDeleteAlertBoxInner .userDeletAlertIconBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: rgba(255, 0, 0, 0.0392156863);
+  padding: 17px 0;
+  border-radius: 10px;
+}
+.userDeleteAlertBox .userDeleteAlertBoxInner .userDeletAlertIconBox svg {
+  font-size: 100px;
+  color: #ffc107;
+  border: 5px solid #ffc107;
+  border-radius: 17px;
+}
+.userDeleteAlertBox .userDeleteAlertBoxInner span {
+  font-size: 17px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.userDeleteAlertBox .userDeleteAlertBoxInner .userDeleteBtnBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.userDeleteAlertBox .userDeleteAlertBoxInner .userDeleteBtnBox button {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.userDeleteAlertBox .userDeleteAlertBoxInner .userDeleteBtnBox button:focus {
+  color: #fff;
+}
+.userDeleteAlertBox .userDeleteAlertBoxInner .userDeleteBtnBox button:hover {
+  color: #fff;
+  background: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.userDeleteAlertBox .userDeleteAlertBoxInner .userDeleteBtnBox button:before {
+  content: "";
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.userDeleteAlertBox .userDeleteAlertBoxInner .userDeleteBtnBox button:hover:before {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transform: scale(2) rotate(180deg);
+}
+
+@media screen and (max-width: 992px) {
+  .userListBox .userListBoxHeadOne {
+    display: block;
+    font-size: 23px;
+    margin: 15px 0 0 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .userListBox .innerUserListBox {
+    justify-content: center;
+  }
+  .userListBox .innerUserListBox .userListBoxHeadTwo {
+    display: none;
+  }
+  .userListBox .innerUserListBox .searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .userListBox .innerUserListBox .searchBar input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .userListBox .innerUserListBox .btnBox button {
+    margin: 10px 5px;
+  }
+  .userListBox .innerUserListBox .btnBox a {
+    margin: 10px 5px;
+  }
+  .userDeleteAlertBox .userDeleteAlertBoxInner .userDeletAlertIconBox svg {
+    font-size: 50px;
+    border: 2px solid #ffc107;
+  }
+}
+@media screen and (max-width: 380px) {
+  .userListBox {
+    margin-bottom: 200px !important;
+  }
+}/*# sourceMappingURL=userList.css.map */

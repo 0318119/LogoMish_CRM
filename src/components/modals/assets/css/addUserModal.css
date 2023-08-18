@@ -1,0 +1,145 @@
+.addUserModalBox {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 36, 36, 0.397);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.addUserModalBox .addUserBox {
+  width: 40%;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  position: relative;
+}
+.addUserModalBox .addUserBox::before {
+  content: "";
+  position: absolute;
+  height: 98%;
+  width: 98%;
+  top: 5px;
+  left: 5px;
+  border: 3px solid lightgray;
+  padding: 42px 22px;
+  border-radius: 11px;
+}
+.addUserModalBox .addUserBox h4 {
+  background: #064CDB;
+  padding: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.addUserModalBox .addUserBox h4 img {
+  height: 40px;
+}
+.addUserModalBox .addUserBox .addUserScrollBox {
+  height: 300px;
+  overflow-y: scroll;
+}
+.addUserModalBox .addUserBox .addUserScrollBox::-webkit-scrollbar-track {
+  background-color: white;
+}
+.addUserModalBox .addUserBox .addUserScrollBox::-webkit-scrollbar {
+  width: 4px;
+  background-color: #F5F5F5;
+}
+.addUserModalBox .addUserBox .addUserScrollBox::-webkit-scrollbar-thumb {
+  background-color: #064CDB;
+}
+.addUserModalBox .addUserBox .inneraddUserBox {
+  margin: 0 10px;
+}
+.addUserModalBox .addUserBox .inneraddUserBox .form-group {
+  position: relative;
+}
+.addUserModalBox .addUserBox .inneraddUserBox .form-group img {
+  position: absolute;
+  right: 0;
+  top: 58px;
+  right: 14px;
+  height: 20px;
+}
+.addUserModalBox .addUserBox .inneraddUserBox label {
+  margin-top: 15px;
+}
+.addUserModalBox .addUserBox .inneraddUserBox select {
+  height: 37px;
+  position: relative;
+}
+.addUserModalBox .addUserBox .inneraddUserBox select option {
+  text-transform: capitalize;
+}
+.addUserModalBox .addUserBox .inneraddUserBox input {
+  width: 100%;
+}
+.addUserModalBox .addUserBox .permissionCheckBoxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin: 0 10px;
+}
+.addUserModalBox .addUserBox .permissionCheckBoxes label {
+  font-weight: 600;
+}
+.addUserModalBox .addUserBox .addUserBtnBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 9999;
+  position: relative;
+}
+.addUserModalBox .addUserBox .addUserBtnBox button:nth-child(1) {
+  background: #fd5d93;
+  color: white;
+}
+.addUserModalBox .addUserBox .addUserBtnBox button {
+  margin: 0 10px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 992px) {
+  .addUserModalBox .addUserBox {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .addUserModalBox .addUserBox {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .addUserModalBox .addUserBox {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .addUserModalBox .addUserBox::before {
+    left: 3px;
+  }
+  .addUserModalBox .addUserBox .addUserBtnBox button {
+    margin: 0 5px;
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .addUserModalBox .addUserBox .addUserBtnBox {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .addUserModalBox .addUserBox .addUserBtnBox button {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=addUserModal.css.map */

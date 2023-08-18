@@ -1,0 +1,93 @@
+.client_changePwdSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+
+.client_changePwdBox {
+  background: white;
+  box-shadow: -3px 13px 10px rgba(128, 128, 128, 0.5215686275);
+  margin-top: 47px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.client_changePwdBox .client_changePwd_head {
+  margin-bottom: 50px;
+}
+.client_changePwdBox .client_changePwd_head .client_logoBox {
+  background: #064CDB;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.client_changePwdBox .client_changePwd_head .client_logoBox img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 55px;
+  padding: 10px 18px;
+}
+.client_changePwdBox form .form-group {
+  position: relative;
+}
+.client_changePwdBox form .form-group img {
+  position: absolute;
+  right: 10px;
+  height: 20px;
+  top: 41px;
+}
+.client_changePwdBox form .client_btnBox button {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+.client_changePwdBox form .client_btnBox button:focus {
+  color: #fff;
+}
+.client_changePwdBox form .client_btnBox button:hover {
+  color: #fff;
+  background: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.client_changePwdBox form .client_btnBox button:before {
+  content: "";
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.client_changePwdBox form .client_btnBox button:hover:before {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transform: scale(2) rotate(180deg);
+}
+
+@media screen and (max-width: 300px) {
+  .client_changePwdBox .client_changePwd_head .client_logoBox {
+    padding: 10px 10px;
+  }
+  .client_changePwdBox .client_changePwd_head .client_logoBox img {
+    height: 45px;
+    padding: 5px 10px;
+  }
+  .client_changePwdBox form .client_btnBox button {
+    padding: 8px 6px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .client_changePwdSection {
+    margin-top: 80px;
+    margin-bottom: 200px !important;
+  }
+}/*# sourceMappingURL=clientChangePwd.css.map */

@@ -1,0 +1,347 @@
+.CusLeadsBox {
+  margin-top: 100px;
+  box-shadow: 3px 6px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 18px;
+  border: 2px solid rgba(128, 128, 128, 0.3215686275);
+  margin-bottom: 120px;
+}
+.CusLeadsBox .CusLeadsBoxHeadOne {
+  display: none;
+}
+.CusLeadsBox .innerCusLeadsBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.CusLeadsBox .innerCusLeadsBox .btnBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.CusLeadsBox .innerCusLeadsBox .btnBox .addLeadsBtn {
+  background: #2196f3;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+.CusLeadsBox .innerCusLeadsBox .btnBox .addLeadsBtn svg {
+  font-size: 25px;
+  margin-right: 5px;
+}
+.CusLeadsBox .innerCusLeadsBox .btnBox button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  height: 35px;
+  border-radius: 5px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.CusLeadsBox .innerCusLeadsBox .btnBox a {
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  height: 35px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.CusLeadsBox .innerCusLeadsBox .CusLeadsBoxHeadTwo {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.CusLeadsBox .innerCusLeadsBox .searchBar {
+  position: relative;
+  margin-right: 10px;
+}
+.CusLeadsBox .innerCusLeadsBox .searchBar svg {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.3215686275);
+}
+.CusLeadsBox .innerCusLeadsBox .searchBar input {
+  letter-spacing: 1px;
+  border: none;
+  background: rgba(158, 158, 158, 0.1607843137);
+  border-radius: 5px;
+  padding: 10px 17px 10px 30px;
+}
+.CusLeadsBox .innerCusLeadsBox .searchBar input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.CusLeadsBox .innerCusLeadsBox .searchBar input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+
+.deleteAlertBox {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.337254902);
+}
+.deleteAlertBox .addCommentBox {
+  width: 40%;
+}
+.deleteAlertBox .viewCommentBox {
+  width: 40%;
+}
+.deleteAlertBox .deleteAlertBoxInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+  position: relative;
+  padding: 36px 46px;
+  box-shadow: 5px 1px 10px grey;
+  border-radius: 10px;
+  border: 5px solid white;
+  position: relative;
+}
+.deleteAlertBox .deleteAlertBoxInner .closeIco {
+  position: absolute;
+  right: 2%;
+  top: 7px;
+  color: white;
+  border: 2px solid white;
+  font-size: 23px;
+  padding: 2px;
+  border-radius: 20px;
+}
+.deleteAlertBox .deleteAlertBoxInner .deleteAlertIconBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 17px 0;
+  border-radius: 10px;
+}
+.deleteAlertBox .deleteAlertBoxInner .deleteAlertIconBox svg {
+  font-size: 100px;
+  color: #ffcc00;
+}
+.deleteAlertBox .deleteAlertBoxInner span {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+}
+.deleteAlertBox .deleteAlertBoxInner .deleteBtnBox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.deleteAlertBox .deleteAlertBoxInner .deleteBtnBox button {
+  background: white;
+  display: block;
+  margin: 11px auto 0 auto;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.deleteAlertBox .deleteAlertBoxInner #viewCommentScrollBox {
+  overflow: auto;
+  height: 200px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid white;
+  border-radius: 11px;
+  color: white;
+}
+.deleteAlertBox .deleteAlertBoxInner #viewCommentScrollBox .commentDes {
+  color: grey;
+  letter-spacing: 1px;
+  line-height: 30px;
+  display: block;
+  font-size: 17px;
+}
+.deleteAlertBox .deleteAlertBoxInner #viewCommentScrollBox::-webkit-scrollbar {
+  width: 8px;
+  height: 20px;
+  background-color: white;
+}
+.deleteAlertBox .deleteAlertBoxInner #viewCommentScrollBox::-webkit-scrollbar-thumb {
+  border-radius: 10px 0 10px 0;
+  background: #2196f3;
+}
+.deleteAlertBox .deleteAlertBoxInner .commentDes {
+  padding: 0;
+  margin: 0;
+}
+.deleteAlertBox .deleteAlertBoxInner h5.commentHead {
+  font-size: 25px;
+  color: white;
+}
+.deleteAlertBox .deleteAlertBoxInner #textareaBox {
+  width: 100%;
+  height: 150px;
+}
+
+.customerLeadsTag {
+  white-space: break-spaces;
+  line-height: 19px;
+  display: block;
+}
+
+.showLeadEmailAlertBox {
+  position: fixed;
+  right: 21px;
+  bottom: 20px;
+  width: 30%;
+  background: white;
+  box-shadow: -3px 2px 10px rgba(128, 128, 128, 0.4117647059);
+  padding: 37px 40px;
+  border-radius: 10px;
+  z-index: 9999;
+}
+.showLeadEmailAlertBox svg {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 22px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.addCloserModuleBox {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.337254902);
+}
+.addCloserModuleBox .addCloserModuleInnerBox {
+  padding: 23px 26px;
+  border: 5px solid white;
+  border-radius: 18px;
+  width: 40%;
+  position: relative;
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+}
+.addCloserModuleBox .addCloserModuleInnerBox svg {
+  position: absolute;
+  right: 2%;
+  top: 7px;
+  color: white;
+  border: 2px solid white;
+  font-size: 23px;
+  padding: 2px;
+  border-radius: 20px;
+}
+.addCloserModuleBox .addCloserModuleInnerBox label {
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
+.addCloserModuleBox .addCloserModuleInnerBox button {
+  background: white;
+  display: block;
+  margin: 11px auto 0 auto;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+  .CusLeadsBox .CusLeadsBoxHeadOne {
+    display: block;
+    font-size: 23px;
+    margin: 15px 0 0 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .CusLeadsBox .innerCusLeadsBox {
+    justify-content: center;
+  }
+  .CusLeadsBox .innerCusLeadsBox .CusLeadsBoxHeadTwo {
+    display: none;
+  }
+  .CusLeadsBox .innerCusLeadsBox .searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .CusLeadsBox .innerCusLeadsBox .searchBar input {
+    width: 100%;
+  }
+  .viewCommentBox {
+    width: 70% !important;
+  }
+  .addCommentBox {
+    width: 70% !important;
+  }
+  .addCloserModuleBox .addCloserModuleInnerBox {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .showLeadEmailAlertBox {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .deleteAlertBoxInner {
+    width: 95%;
+  }
+  .deleteAlertBoxInner span {
+    font-size: 18px !important;
+    text-align: center;
+  }
+  .addCommentBox {
+    width: 95% !important;
+  }
+  .showLeadEmailAlertBox {
+    width: 70%;
+  }
+  .addCloserModuleBox .addCloserModuleInnerBox {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .viewCommentBox {
+    width: 95% !important;
+  }
+  .deleteAlertBox .deleteAlertBoxInner .deleteAlertIconBox svg {
+    font-size: 50px;
+    border: 2px solid #ffc107;
+  }
+}
+@media screen and (max-width: 380px) {
+  .allProfileAdminBox {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .CusLeadsBox {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .CusLeadsBox {
+    margin-bottom: 200px !important;
+  }
+}/*# sourceMappingURL=CustomersLeads.css.map */

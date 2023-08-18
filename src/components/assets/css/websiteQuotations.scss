@@ -1,0 +1,139 @@
+
+// COLORS ===========================================
+@import 'colors';
+
+
+// CUSTOMER'S LEADS SCSS  ========================================================
+
+
+.webQuotBox{
+    margin-top: 100px;
+    box-shadow: 3px 6px 10px $shadowColor;
+    border-radius: 18px;
+    border: 2px solid $borderColor;
+    margin-bottom: 120px;
+    .webQuotBoxOne{
+        display: none;
+    }
+
+    .innerWebQuotBox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .btnBox{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            button{
+                padding: 5px 10px;
+                margin: 0 5px;
+                height: 35px;
+                border-radius: 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+            a{
+                border-radius: 5px;
+                margin: 0 5px;
+                padding: 5px 10px;
+                height: 35px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+        .webQuotBoxTwo{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .searchBar {
+            position: relative;
+            margin-right: 10px;
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .actionsBtns{
+        width: 100%;
+        button{
+            padding: 10px 6px;
+            margin: 5px 5px;
+            color: $white;
+            border-radius: 5px;
+        }
+        .deleteBtn{
+            background: #ec250d;
+        }
+    }
+}
+
+
+// RESPONSIVE ====================================================================
+$breakpoint-tablet: 768px;
+@media screen and (max-width: 992px) {
+    .webQuotBox{
+        .webQuotBoxOne{
+            display: block;
+            font-size: 23px;
+            margin: 15px 0 0 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .innerWebQuotBox{
+            justify-content: center !important;
+            .webQuotBoxTwo{
+                display: none;
+            }
+            .searchBar {
+                margin-top: 20px;
+                width: 90%;
+                margin-right: 0;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px){
+    .webQuotBox{
+        .innerWebQuotBox{
+            .btnBox{
+                button{
+                    margin: 10px 5px;
+                }
+                a{
+                    margin: 10px 5px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    .webQuotBox{
+        margin-bottom: 200px !important
+    }
+}

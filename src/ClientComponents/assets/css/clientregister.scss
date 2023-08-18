@@ -1,0 +1,78 @@
+
+// COLORS ===========================================
+@import 'colors';
+
+
+.client_registerFormSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client_registerFormBox{
+    .client_registerFlexBox{
+        display: flex;
+        justify-content: space-between;
+    }
+    .client_formRememberBox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .form-check{
+            label{
+                font-weight: 600;
+            color: $greyTextColor;
+
+            }
+        }
+    }
+    .client_signInBtnBox{
+        button{
+            padding: 10px 25px;
+            text-transform: uppercase;
+            font-weight: 400;
+            border-radius: 5px;
+            transition: 1ms;
+            &:hover{
+                transition: 1ms;
+                background: $lightBlue;
+                color: $white;
+            }
+        }
+        span{
+            margin-top: 20px;
+            font-weight: 500;
+            color: $greyTextColor;
+            a{
+                margin-left: 5px;
+                color: $greyTextColor;
+                text-decoration: underline !important;
+            }
+        }
+    }
+}
+
+
+// RESPONSIVE ===========================================================================
+$breakpoint-large: 992px;
+
+@media screen and (max-width: $breakpoint-large){
+    .client_registerFormSection{
+        height: auto;
+    }
+    .client_registerformImgBox{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .client_registerFormBox{
+        .client_registerFlexBox{
+            flex-direction: column;
+            .form-group{
+                label{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

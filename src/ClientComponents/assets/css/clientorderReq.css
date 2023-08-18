@@ -1,0 +1,46 @@
+.client_orderReqMainBox {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background: white;
+  width: 100%;
+}
+.client_orderReqMainBox .client_orderReqBtnBox {
+  display: flex;
+  justify-content: space-around;
+}
+.client_orderReqMainBox .client_orderReqBtnBox button {
+  background: #2196f3;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+.client_orderReqMainBox .client_orderReqBtnBox .client_searchBar {
+  position: relative;
+  margin-right: 10px;
+}
+.client_orderReqMainBox .client_orderReqBtnBox .client_searchBar svg {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.3215686275);
+}
+.client_orderReqMainBox .client_orderReqBtnBox .client_searchBar input {
+  letter-spacing: 1px;
+  border: none;
+  background: rgba(158, 158, 158, 0.1607843137);
+  border-radius: 5px;
+  padding: 10px 17px 10px 30px;
+}
+.client_orderReqMainBox .client_orderReqBtnBox .client_searchBar input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.client_orderReqMainBox .client_orderReqBtnBox .client_searchBar input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.client_orderReqMainBox .client_comminutionBox {
+  border-top: 1px solid rgba(128, 128, 128, 0.3215686275);
+}/*# sourceMappingURL=clientorderReq.css.map */

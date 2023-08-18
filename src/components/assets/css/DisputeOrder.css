@@ -1,0 +1,110 @@
+.disputeOrders {
+  margin-top: 100px;
+  margin-bottom: 120px;
+  box-shadow: 3px 6px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 18px;
+  border: 2px solid rgba(128, 128, 128, 0.3215686275);
+}
+.disputeOrders .disputeOrdersHeadOne {
+  display: none;
+}
+.disputeOrders .innerDisputeOrdersBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.disputeOrders .innerDisputeOrdersBox .btnBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.disputeOrders .innerDisputeOrdersBox .btnBox button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  height: 35px;
+  border-radius: 5px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.disputeOrders .innerDisputeOrdersBox .btnBox a {
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  height: 35px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.disputeOrders .innerDisputeOrdersBox .disputeOrdersHeadTwo {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.disputeOrders .innerDisputeOrdersBox .searchBar {
+  position: relative;
+  margin-right: 10px;
+}
+.disputeOrders .innerDisputeOrdersBox .searchBar svg {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.3215686275);
+}
+.disputeOrders .innerDisputeOrdersBox .searchBar input {
+  letter-spacing: 1px;
+  border: none;
+  background: rgba(158, 158, 158, 0.1607843137);
+  border-radius: 5px;
+  padding: 10px 17px 10px 30px;
+}
+.disputeOrders .innerDisputeOrdersBox .searchBar input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.disputeOrders .innerDisputeOrdersBox .searchBar input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .disputeOrders .disputeOrdersHeadOne {
+    display: block;
+    font-size: 23px;
+    margin: 15px 0 0 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .disputeOrders .innerDisputeOrdersBox {
+    justify-content: center;
+  }
+  .disputeOrders .innerDisputeOrdersBox .disputeOrdersHeadTwo {
+    display: none;
+  }
+  .disputeOrders .innerDisputeOrdersBox .searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .disputeOrders .innerDisputeOrdersBox .searchBar input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .disputeOrders .innerDisputeOrdersBox .btnBox button {
+    margin: 10px 5px;
+  }
+  .disputeOrders .innerDisputeOrdersBox .btnBox a {
+    margin: 10px 5px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .disputeOrders {
+    margin-bottom: 200px !important;
+  }
+}/*# sourceMappingURL=DisputeOrder.css.map */

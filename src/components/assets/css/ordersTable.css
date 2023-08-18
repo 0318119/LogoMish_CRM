@@ -1,0 +1,326 @@
+.orderBox {
+  margin-top: 100px;
+  box-shadow: 3px 6px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 18px;
+  border: 2px solid rgba(128, 128, 128, 0.3215686275);
+  margin-bottom: 120px;
+}
+.orderBox .orderBoxHeadOne {
+  display: none;
+}
+.orderBox .innerOrderBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.orderBox .innerOrderBox .btnBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.orderBox .innerOrderBox .btnBox button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  height: 35px;
+  border-radius: 5px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.orderBox .innerOrderBox .btnBox button:hover {
+  background-color: #1a83d8;
+}
+.orderBox .innerOrderBox .btnBox a {
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  height: 35px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.orderBox .innerOrderBox .orderBoxHeadTwo {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.orderBox .innerOrderBox .searchBar {
+  position: relative;
+  margin-right: 10px;
+}
+.orderBox .innerOrderBox .searchBar svg {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.3215686275);
+}
+.orderBox .innerOrderBox .searchBar input {
+  letter-spacing: 1px;
+  border: none;
+  background: rgba(158, 158, 158, 0.1607843137);
+  border-radius: 5px;
+  padding: 10px 17px 10px 30px;
+}
+.orderBox .innerOrderBox .searchBar input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.orderBox .innerOrderBox .searchBar input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+
+.orderStatusBox {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.281);
+}
+.orderStatusBox .innerOrderStatusBox {
+  background: white;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+  border: 5px solid white;
+  width: 30%;
+  position: relative;
+}
+.orderStatusBox .innerOrderStatusBox h3 {
+  position: absolute;
+  right: 10px;
+}
+.orderStatusBox .innerOrderStatusBox h3 svg {
+  position: relative;
+  font-size: 25px;
+  color: white;
+}
+.orderStatusBox .innerOrderStatusBox h5 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 20px auto;
+  color: white;
+}
+.orderStatusBox .innerOrderStatusBox .orderStatusBoxBtnBox {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.orderStatusBox .innerOrderStatusBox .orderStatusBoxBtnBox button {
+  background: white;
+  padding: 4px 30px 7px 30px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.filesViewBox {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.281);
+}
+.filesViewBox .innerfilesViewBox {
+  background: white;
+  border-radius: 20px;
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+  border: 5px solid white;
+  width: 30%;
+  position: relative;
+}
+.filesViewBox .innerfilesViewBox h3 {
+  position: absolute;
+  right: 10px;
+}
+.filesViewBox .innerfilesViewBox h3 svg {
+  position: relative;
+  font-size: 25px;
+  color: white;
+}
+.filesViewBox .innerfilesViewBox h5 {
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: 10px;
+  color: white;
+}
+.filesViewBox .innerfilesViewBox div {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.filesViewBox .innerfilesViewBox div span {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 0 10px 10px 10px;
+}
+.filesViewBox .innerfilesViewBox div span a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+.filesViewBox .innerfilesViewBox div span a svg {
+  font-size: 30px;
+}
+
+.oneMonthOrderBox {
+  margin-top: 20px;
+  box-shadow: 3px 6px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 18px;
+  border: 2px solid rgba(128, 128, 128, 0.3215686275);
+  margin-bottom: 150px;
+}
+.oneMonthOrderBox .innerOrderBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.oneMonthOrderBox .innerOrderBox .btnBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.oneMonthOrderBox .innerOrderBox .btnBox button {
+  padding: 5px 10px;
+  height: 35px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.oneMonthOrderBox .innerOrderBox .btnBox a {
+  border-radius: 5px;
+  padding: 5px 10px;
+  height: 35px;
+  margin: 0 5px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.oneMonthOrderBox .innerOrderBox .searchBar {
+  position: relative;
+  margin-right: 10px;
+}
+.oneMonthOrderBox .innerOrderBox .searchBar svg {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.3215686275);
+}
+.oneMonthOrderBox .innerOrderBox .searchBar input {
+  letter-spacing: 1px;
+  border: none;
+  background: rgba(158, 158, 158, 0.1607843137);
+  border-radius: 5px;
+  padding: 10px 17px 10px 30px;
+}
+.oneMonthOrderBox .innerOrderBox .searchBar input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.oneMonthOrderBox .innerOrderBox .searchBar input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  .orderStatusBox .innerOrderStatusBox {
+    width: 50%;
+  }
+  .filesViewBox .innerfilesViewBox {
+    width: 50%;
+  }
+  .orderBox .orderBoxHeadOne {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 23px;
+    margin: 15px 0 0 6px;
+    font-weight: 600;
+  }
+  .orderBox .orderBoxHeadTwo {
+    display: none;
+  }
+  .orderBox .innerOrderBox {
+    justify-content: center;
+  }
+  .orderBox .innerOrderBox .searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .orderBox .innerOrderBox .searchBar input {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .oneMonthOrderBox .innerOrderBox {
+    justify-content: center;
+  }
+  .oneMonthOrderBox .innerOrderBox .searchBar {
+    margin-top: 20px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .oneMonthOrderBox .innerOrderBox .searchBar input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .orderStatusBox .innerOrderStatusBox {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .orderBox .innerOrderBox .btnBox button {
+    margin: 10px 5px;
+  }
+  .orderBox .innerOrderBox .btnBox a {
+    margin: 10px 5px;
+  }
+  .oneMonthOrderBox .innerOrderBox .btnBox button {
+    margin: 10px 5px;
+  }
+  .oneMonthOrderBox .innerOrderBox .btnBox a {
+    margin: 10px 5px;
+  }
+  .orderStatusBox .innerOrderStatusBox {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .orderBox {
+    margin-bottom: 200px !important;
+  }
+  .oneMonthOrderBox {
+    margin-bottom: 200px !important;
+  }
+}/*# sourceMappingURL=ordersTable.css.map */

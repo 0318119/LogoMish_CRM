@@ -1,0 +1,130 @@
+.contactForm {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px -15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.form-container::before {
+  content: "";
+  position: absolute;
+  height: 96%;
+  width: 98%;
+  top: 7px;
+  left: 5px;
+  border: 3px solid lightgray;
+  padding: 42px 22px;
+  border-radius: 11px;
+}
+.form-container .title {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0 0 25px;
+}
+.form-container .title:after {
+  content: "";
+  background-color: #00A9EF;
+  height: 3px;
+  width: 60px;
+  margin: 10px 0 0;
+  display: block;
+  clear: both;
+}
+.form-container form {
+  position: relative;
+}
+.form-container form .form-group {
+  color: #333;
+  width: 100%;
+  padding: 0 8px;
+  margin: 0 0 15px;
+  display: inline-block;
+}
+.form-container form .form-group:nth-child(4) {
+  margin-bottom: 30px;
+}
+.form-container form .form-group label {
+  font-size: 17px;
+  font-weight: 600;
+}
+.form-container form .form-control {
+  color: #888;
+  background: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  height: 40px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 2px solid #e7e7e7;
+}
+.form-container form .check-terms {
+  padding: 0 8px;
+  margin: 0 0 25px;
+}
+.form-container form .check-terms .check-label {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  vertical-align: top;
+  display: inline-block;
+}
+.form-container form .check-terms .checkbox {
+  height: 17px;
+  width: 17px;
+  min-height: auto;
+  margin: 2px 8px 0 0;
+  border: 2px solid #d9d9d9;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.form-container form .contactBtn {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.form-container form .contactBtn:focus {
+  color: #fff;
+}
+.form-container form .contactBtn:hover {
+  color: #fff;
+  background: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.form-container form .contactBtn:before {
+  content: "";
+  background: linear-gradient(315deg, #1fd1f9 0%, #064CDB 74%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease 0s;
+}
+.form-container form button:hover:before {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5), inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  transform: scale(2) rotate(180deg);
+}
+
+@media only screen and (max-width: 480px) {
+  .form-container::before {
+    left: 3px;
+  }
+}/*# sourceMappingURL=contactusForm.css.map */

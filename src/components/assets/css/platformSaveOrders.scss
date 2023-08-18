@@ -1,0 +1,231 @@
+
+// COLORS ===========================================
+@import 'colors';
+
+
+
+.saveOrderList{
+    margin-top: 100px;
+    box-shadow: 3px 6px 10px $shadowColor;
+    border-radius: 18px;
+    border: 2px solid $borderColor;
+    margin-bottom: 120px;
+    .saveOrderListHeadOne{
+        display: none;
+    }
+
+    .innersaveOrderList{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .btnBox{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            button{
+                padding: 5px 10px;
+                margin: 0 5px;
+                height: 35px;
+                border-radius: 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+            a{
+                border-radius: 5px;
+                margin: 0 5px;
+                padding: 5px 10px;
+                height: 35px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+        .saveOrderListHeadTwo{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .searchBar {
+            position: relative;
+            margin-right: 10px;
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+// ===================
+.saveOrderbtnBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    button:nth-child(1){
+        background: #fd5d93;
+    }
+    button:nth-child(2){
+        margin-left: 20px;
+        background: #ec250d;
+    }
+    button{
+        padding: 3px 4px;
+        svg{
+            font-size: 20px;
+        }
+    }
+}
+
+// ================================
+.AddSaveModal{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000082;
+    z-index: 9999;
+}
+.innerAddSaveModal{
+    background-color: white;
+    width: 40%;
+    border-radius: 10px;
+    h4{
+        background: $themeTxtColor; 
+        margin: 10px 20px;
+        border-radius: 15px;
+        text-align: center;
+        padding: 8px 0;
+        img{
+            height: 51px;
+        }
+    }
+    .AddSaveModalScrollBox{
+        overflow-y: scroll;
+        height: 250px;
+        padding: 0 15px;
+        z-index: 9999;
+        position: relative;
+        &::-webkit-scrollbar-track{
+            background-color: white;
+        }
+        &::-webkit-scrollbar{
+            width: 4px;
+            background-color: #F5F5F5;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: $themeTxtColor;
+        }
+        .form-group{
+            label{
+                align-items: center;
+                border: 1px solid #d3d3d333;
+                display: inline-flex;
+                padding: 3px 8px;
+                border-radius: 8px;
+                svg{
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+    .AddSaveModalBtnBox{
+        border-top: 1px solid lightgray;
+        margin-top: 20px;
+        padding: 25px 10px;
+        display: flex;
+        justify-content: end;
+        button{
+            font-size: 18px;
+            margin: 0 10px;
+            padding: 5px 30px;
+            border-radius: 7px;
+        }
+        button:nth-child(1){
+            background: #fd5d93;
+            color: white;
+        }
+    }
+}
+
+// RESPONSIVE ==================================================
+@media screen and (max-width:992px){
+    .saveOrderList{
+        .saveOrderListHeadOne{
+            display: block;
+            font-size: 23px;
+            margin: 15px 0 0 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .innersaveOrderList{
+            .saveOrderListHeadTwo {
+                display: none;
+            }
+            justify-content: center;
+            .searchBar {
+                margin-top: 10px;
+                width: 90%;
+                margin-right: 0;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .innerAddSaveModal{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .innerAddSaveModal{
+        width: 70%;
+    }
+}
+@media screen and (max-width:480px){
+    .innerAddSaveModal{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .saveOrderList{
+        .innersaveOrderList{
+            .btnBox{
+                button{
+                    margin: 10px 5px;
+                }
+                a{
+                    margin: 10px 5px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    .saveOrderList{
+        margin-bottom: 200px !important
+    }
+}

@@ -1,0 +1,142 @@
+.orderReplyMainBox {
+  background: rgba(128, 128, 128, 0.04);
+  padding: 20px 5px;
+  margin-top: 100px;
+}
+.orderReplyMainBox .orderReplyProfileBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.orderReplyMainBox .orderReplyProfileBox .orderReplyProfileInnerBox {
+  display: flex;
+  align-items: center;
+}
+.orderReplyMainBox .orderReplyProfileBox .orderReplyProfileInnerBox img {
+  border-radius: 50%;
+}
+.orderReplyMainBox .orderReplyProfileBox .orderReplyProfileInnerBox h5 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.orderReplyMainBox .orderReplyProfileBox .orderReplyProfileInnerBox h5 span {
+  color: #607D8B;
+  font-size: 12px;
+}
+.orderReplyMainBox .orderReplyProfileBox .orderReplyTimeBox span {
+  color: #607D8B;
+  font-size: 14px;
+}
+.orderReplyMainBox .orderReplyProfileBox .orderReplyTimeBox span:nth-child(2) {
+  margin-left: 10px;
+}
+.orderReplyMainBox .orderReplyDesBox {
+  background: white;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+.orderReplyMainBox .orderReplyDesBox .orderReplyDesBody span {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3215686275);
+  display: block;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+.orderReplyMainBox .orderReplyDesBox .orderReplyDesBody p {
+  margin-top: 15px;
+  word-break: break-all;
+}
+.orderReplyMainBox .orderReplyDesBox .orderReplyBox {
+  word-wrap: break-word;
+}
+.orderReplyMainBox .orderReplyDesBox .orderReplyBox h6 {
+  font-size: 15px;
+  color: grey;
+}
+.orderReplyMainBox .orderReplyDesBox .orderReplyBox li {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+.orderReplyMainBox .orderReplyDesBox .orderReplyBox li span {
+  display: none;
+  margin-left: 10px;
+  background: rgba(128, 128, 128, 0.459);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.orderReplyMainBox .orderReplyDesBox .orderReplyBox li:hover span {
+  display: inline-block;
+}
+.orderReplyMainBox .orderReplyDesBox .orderReplyBtnBox {
+  margin-top: 50px;
+}
+.orderReplyMainBox .orderReplyDesBox .orderReplyBtnBox button {
+  background: #064CDB;
+  border-radius: 10px;
+  padding: 5px 30px;
+  color: white;
+}
+.orderReplyMainBox .orderReplyDesBox .orderReplyBtnBox button:hover {
+  background: rgba(128, 128, 128, 0.3215686275);
+}
+
+.orderReplyBoxModal {
+  position: fixed;
+  background: white;
+  width: 50%;
+  right: 20px;
+  bottom: 0;
+  z-index: 9999;
+  box-shadow: -4px -4px 10px rgba(158, 158, 158, 0.2705882353);
+  padding: 13px 13px;
+}
+.orderReplyBoxModal h5 {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3215686275);
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 5px;
+  color: grey;
+}
+.orderReplyBoxModal textarea {
+  height: 174px;
+  width: 100%;
+  border-color: rgba(128, 128, 128, 0.3215686275);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.orderReplyBoxModal textarea:focus {
+  outline: none;
+}
+.orderReplyBoxModal .orderreplyModalbtnBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.orderReplyBoxModal .orderreplyModalbtnBox button {
+  background: #064CDB;
+  padding: 8px 30px;
+  color: white;
+  border-radius: 10px;
+  margin: 0 10px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .orderReplyBoxModal {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .orderReplyBoxModal {
+    width: 80%;
+  }
+  .orderReplyBoxModal .orderreplyModalbtnBox button {
+    padding: 8px 10px;
+    margin: 5px 10px;
+  }
+}/*# sourceMappingURL=orderReply.css.map */

@@ -1,0 +1,127 @@
+// COLORS ===========================================
+@import 'colors';
+
+
+.client_changePwdSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.client_changePwdBox {
+    background: white;
+    box-shadow: -3px 13px 10px #80808085;
+    margin-top: 47px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    .client_changePwd_head {
+        margin-bottom: 50px;
+
+        .client_logoBox {
+            background: $themeTxtColor;
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+
+            img {
+                object-fit: contain;
+                height: 55px;
+                padding: 10px 18px;
+            }
+        }
+    }
+
+    form {
+        .form-group {
+            position: relative;
+
+            img {
+                position: absolute;
+                right: 10px;
+                height: 20px;
+                top: 41px;
+            }
+        }
+
+        .client_btnBox {
+            button {
+                color: #fff;
+                text-transform: uppercase;
+                padding: 10px 25px;
+                overflow: hidden;
+                position: relative;
+                z-index: 0;
+                transition: all 0.3s ease;
+            }
+
+            button:focus {
+                color: #fff;
+            }
+
+            button:hover {
+                color: #fff;
+                background: transparent;
+                text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            }
+
+            button:before {
+                content: "";
+                background: linear-gradient(315deg, #1fd1f9 0%, $themeTxtColor 74%);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all 0.3s ease 0s;
+            }
+
+            button:hover:before {
+                box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+                    -4px -4px 6px 0 rgba(116, 125, 136, .2),
+                    inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
+                    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+                transform: scale(2) rotate(180deg);
+            }
+        }
+    }
+}
+
+// RESPONSIVE ===========================================================================
+$breakpoint-large: 992px;
+$breakpoint-extra-small: 420px;
+
+
+@media screen and (max-width: 300px) {
+    .client_changePwdBox {
+        .client_changePwd_head {
+            .client_logoBox {
+                padding: 10px 10px;
+
+                img {
+                    height: 45px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        form{
+            .client_btnBox{
+                button{
+                    padding: 8px 6px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px){
+    .client_changePwdSection{
+        margin-top: 80px;
+        margin-bottom: 200px !important
+    }
+}

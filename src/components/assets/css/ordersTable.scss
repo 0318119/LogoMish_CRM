@@ -1,0 +1,357 @@
+
+// COLORS ===========================================
+@import 'colors';
+
+
+// ALL ORDERS SCSS  ========================================================
+
+
+.orderBox{
+    margin-top: 100px;
+    box-shadow: 3px 6px 10px $shadowColor;
+    border-radius: 18px;
+    border: 2px solid $borderColor;
+    margin-bottom: 120px;
+
+    .orderBoxHeadOne{
+        display: none;
+    }
+    .innerOrderBox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .btnBox{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            button{
+                padding: 5px 10px;
+                margin: 0 5px;
+                height: 35px;
+                border-radius: 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+                &:hover{
+                    background-color: #1a83d8;
+                }
+            }
+            a{
+                border-radius: 5px;
+                margin: 0 5px;
+                padding: 5px 10px;
+                height: 35px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+        .orderBoxHeadTwo{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .searchBar {
+            position: relative;
+            margin-right: 10px;
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.orderStatusBox{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.281);
+    .innerOrderStatusBox{
+        background: white;
+        border-radius: 20px;
+        background: linear-gradient(315deg, #1fd1f9 0%, $themeTxtColor 74%);
+        border: 5px solid white;
+        width: 30%;
+        position: relative;
+        h3{
+            position: absolute;
+            right: 10px;
+            svg{
+                position: relative;
+                font-size: 25px;
+                color: $white;
+            }
+        }
+        h5{
+            font-size: 20px;
+            text-align: center;
+            padding-top: 20px;
+            margin: 20px auto;
+            color: white;
+        }
+        .orderStatusBoxBtnBox{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            button{
+                background: white;
+                padding: 4px 30px 7px 30px;
+                text-transform: capitalize;
+                font-size: 20px;
+                font-weight: 600;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+.filesViewBox{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.281);
+    .innerfilesViewBox{
+        background: white;
+        border-radius: 20px;
+        background: linear-gradient(315deg, #1fd1f9 0%, $themeTxtColor 74%);
+        border: 5px solid white;
+        width: 30%;
+        // height: 300px;
+        position: relative;
+        h3{
+            position: absolute;
+            right: 10px;
+            svg{
+                position: relative;
+                font-size: 25px;
+                color: $white;
+            }
+        }
+        h5{
+            font-size: 25px;
+            margin-left: 15px;
+            margin-top: 10px;
+            color: $white;
+        }
+        div{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 10px;
+            span{
+                display: flex;
+                align-items: center;
+                background: $white;
+                padding: 10px 20px;
+                margin: 10px 0;
+                border-radius: 0 10px 10px 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    margin-right: 10px;
+                    svg{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+// ONE MONTH ORDER SCSS  ===============================================
+
+.oneMonthOrderBox{
+    margin-top: 20px;
+    box-shadow: 3px 6px 10px $shadowColor;
+    border-radius: 18px;
+    border: 2px solid $borderColor;
+    margin-bottom: 150px;
+
+
+    .innerOrderBox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .btnBox{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            button{
+                padding: 5px 10px;
+                height: 35px;
+                margin: 0 5px;
+                border-radius: 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+            a{
+                border-radius: 5px;
+                padding: 5px 10px;
+                height: 35px;
+                margin: 0 5px;
+                background: $lightBlue;
+                color: $white;
+                letter-spacing: 1px;
+            }
+        }
+        .searchBar {
+            position: relative;
+            margin-right: 10px;
+            svg {
+                position: absolute;
+                left: 6px;
+                top: 12px;
+                font-size: 22px;
+                color: $lightgreycolor;
+            }
+            input {
+                letter-spacing: 1px;
+                border: none;
+                background: $inputBg;
+                border-radius: 5px;
+                padding: 10px 17px 10px 30px;
+                &::placeholder {
+                    color: $greyTextColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE ==================================================
+$breakpoint-tablet: 768px;
+@media screen and (max-width:992px){
+    .orderStatusBox{
+        .innerOrderStatusBox{
+            width: 50%;
+        }
+    }
+    .filesViewBox{
+        .innerfilesViewBox{
+            width: 50%;
+        }
+    }
+    .orderBox{
+        .orderBoxHeadOne {
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 23px;
+            margin: 15px 0 0 6px;
+            font-weight: 600;
+        }
+        .orderBoxHeadTwo {
+            display: none;
+        }
+        .innerOrderBox{
+            justify-content: center;
+            .searchBar {
+                margin-top: 20px;
+                width: 90%;
+                margin-right: 0;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+@media (max-width: $breakpoint-tablet) {
+    .oneMonthOrderBox{
+        .innerOrderBox{
+            justify-content: center;
+            .searchBar {
+                margin-top: 20px;
+                width: 90%;
+                margin-right: 0;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:575px){
+    .orderStatusBox{
+        .innerOrderStatusBox{
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width:420px){
+    .orderBox{
+        .innerOrderBox{
+            .btnBox{
+                button{
+                    margin: 10px 5px;
+                }
+                a{
+                    margin: 10px 5px;
+                }
+            }
+        }
+    }
+
+    .oneMonthOrderBox{
+        .innerOrderBox{
+            .btnBox{
+                button{
+                    margin: 10px 5px;
+                }
+                a{
+                    margin: 10px 5px;
+                }
+            }
+        }
+    }
+    .orderStatusBox{
+        .innerOrderStatusBox{
+            width: 95%;
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    .orderBox{
+        margin-bottom: 200px !important
+    }
+    .oneMonthOrderBox{
+        margin-bottom: 200px !important;
+    }
+}

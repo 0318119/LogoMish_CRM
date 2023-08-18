@@ -1,0 +1,215 @@
+.saveOrderList {
+  margin-top: 100px;
+  box-shadow: 3px 6px 10px rgba(158, 158, 158, 0.5098039216);
+  border-radius: 18px;
+  border: 2px solid rgba(128, 128, 128, 0.3215686275);
+  margin-bottom: 120px;
+}
+.saveOrderList .saveOrderListHeadOne {
+  display: none;
+}
+.saveOrderList .innersaveOrderList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3215686275);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.saveOrderList .innersaveOrderList .btnBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.saveOrderList .innersaveOrderList .btnBox button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  height: 35px;
+  border-radius: 5px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.saveOrderList .innersaveOrderList .btnBox a {
+  border-radius: 5px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  height: 35px;
+  background: #2196f3;
+  color: white;
+  letter-spacing: 1px;
+}
+.saveOrderList .innersaveOrderList .saveOrderListHeadTwo {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.saveOrderList .innersaveOrderList .searchBar {
+  position: relative;
+  margin-right: 10px;
+}
+.saveOrderList .innersaveOrderList .searchBar svg {
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.3215686275);
+}
+.saveOrderList .innersaveOrderList .searchBar input {
+  letter-spacing: 1px;
+  border: none;
+  background: rgba(158, 158, 158, 0.1607843137);
+  border-radius: 5px;
+  padding: 10px 17px 10px 30px;
+}
+.saveOrderList .innersaveOrderList .searchBar input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+.saveOrderList .innersaveOrderList .searchBar input::placeholder {
+  color: rgba(128, 128, 128, 0.658);
+  font-size: 14px;
+}
+
+.saveOrderbtnBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.saveOrderbtnBox button:nth-child(1) {
+  background: #fd5d93;
+}
+.saveOrderbtnBox button:nth-child(2) {
+  margin-left: 20px;
+  background: #ec250d;
+}
+.saveOrderbtnBox button {
+  padding: 3px 4px;
+}
+.saveOrderbtnBox button svg {
+  font-size: 20px;
+}
+
+.AddSaveModal {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5098039216);
+  z-index: 9999;
+}
+
+.innerAddSaveModal {
+  background-color: white;
+  width: 40%;
+  border-radius: 10px;
+}
+.innerAddSaveModal h4 {
+  background: #064CDB;
+  margin: 10px 20px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 8px 0;
+}
+.innerAddSaveModal h4 img {
+  height: 51px;
+}
+.innerAddSaveModal .AddSaveModalScrollBox {
+  overflow-y: scroll;
+  height: 250px;
+  padding: 0 15px;
+  z-index: 9999;
+  position: relative;
+}
+.innerAddSaveModal .AddSaveModalScrollBox::-webkit-scrollbar-track {
+  background-color: white;
+}
+.innerAddSaveModal .AddSaveModalScrollBox::-webkit-scrollbar {
+  width: 4px;
+  background-color: #F5F5F5;
+}
+.innerAddSaveModal .AddSaveModalScrollBox::-webkit-scrollbar-thumb {
+  background-color: #064CDB;
+}
+.innerAddSaveModal .AddSaveModalScrollBox .form-group label {
+  align-items: center;
+  border: 1px solid rgba(211, 211, 211, 0.2);
+  display: inline-flex;
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+.innerAddSaveModal .AddSaveModalScrollBox .form-group label svg {
+  margin-right: 3px;
+}
+.innerAddSaveModal .AddSaveModalBtnBox {
+  border-top: 1px solid lightgray;
+  margin-top: 20px;
+  padding: 25px 10px;
+  display: flex;
+  justify-content: end;
+}
+.innerAddSaveModal .AddSaveModalBtnBox button {
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 5px 30px;
+  border-radius: 7px;
+}
+.innerAddSaveModal .AddSaveModalBtnBox button:nth-child(1) {
+  background: #fd5d93;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .saveOrderList .saveOrderListHeadOne {
+    display: block;
+    font-size: 23px;
+    margin: 15px 0 0 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .saveOrderList .innersaveOrderList {
+    justify-content: center;
+  }
+  .saveOrderList .innersaveOrderList .saveOrderListHeadTwo {
+    display: none;
+  }
+  .saveOrderList .innersaveOrderList .searchBar {
+    margin-top: 10px;
+    width: 90%;
+    margin-right: 0;
+  }
+  .saveOrderList .innersaveOrderList .searchBar input {
+    width: 100%;
+  }
+  .innerAddSaveModal {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .innerAddSaveModal {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .innerAddSaveModal {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .saveOrderList .innersaveOrderList .btnBox button {
+    margin: 10px 5px;
+  }
+  .saveOrderList .innersaveOrderList .btnBox a {
+    margin: 10px 5px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .saveOrderList {
+    margin-bottom: 200px !important;
+  }
+}/*# sourceMappingURL=platformSaveOrders.css.map */
