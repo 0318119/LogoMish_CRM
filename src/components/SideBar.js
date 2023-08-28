@@ -21,6 +21,10 @@ import { BiSave as Save_ico } from "react-icons/bi";
 import { VscReferences as Refer_ico } from "react-icons/vsc";
 import { ImProfile as  User_profiles_ico } from "react-icons/im";
 import { Tooltip } from 'react-tooltip';
+import { GoProject as Project_ico } from "react-icons/go";
+import { MdTaskAlt as Task_ico } from "react-icons/md";
+
+
 export default function (props) {
     const [isRole, setRole] = useState(secureLocalStorage.getItem("user_name"))
     var get_role = secureLocalStorage.getItem("role_id")
@@ -135,6 +139,28 @@ export default function (props) {
                                                     anchorSelect=".UpSale"
                                                     place="bottom"
                                                     content="UpSale"
+                                                />
+                                            </li>
+                                            <li>
+                                                <NavLink to="/AddProject" className="sideBarLinksActive">
+                                                    <Project_ico className='Project' />
+                                                    <span id='hideTxt'>Add Project</span>
+                                                </NavLink>
+                                                <Tooltip
+                                                    anchorSelect=".Project"
+                                                    place="bottom"
+                                                    content="Add Project"
+                                                />
+                                            </li>
+                                            <li>
+                                                <NavLink to="/AddTask" className="sideBarLinksActive">
+                                                    <Task_ico className='Task' />
+                                                    <span id='hideTxt'>Add Task</span>
+                                                </NavLink>
+                                                <Tooltip
+                                                    anchorSelect=".Task"
+                                                    place="bottom"
+                                                    content="Add Task"
                                                 />
                                             </li>
                                             <li>

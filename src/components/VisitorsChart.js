@@ -39,6 +39,7 @@ function VisitorsChart() {
         }).finally(() => { setLoading(false) })
       }
       else if(response.messsage == "timeout error"){
+        console.log("response.messsage",response.messsage)
           localStorage.clear()
           sessionStorage.clear()
           window.location.href='/'

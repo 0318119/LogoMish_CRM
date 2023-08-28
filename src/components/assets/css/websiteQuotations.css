@@ -31,6 +31,9 @@
   color: white;
   letter-spacing: 1px;
 }
+.webQuotBox .innerWebQuotBox .btnBox svg {
+  font-size: medium !important;
+}
 .webQuotBox .innerWebQuotBox .btnBox a {
   border-radius: 5px;
   margin: 0 5px;

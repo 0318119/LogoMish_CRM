@@ -49,9 +49,8 @@ import ViewUpsaleorder from '../pages/ViewUpsaleorder';
 import ViewOrdersQuotation from '../pages/ViewOrdersQuotation';
 import OtherPlatFormsOrderSaveOrders from '../pages/OtherPlatFormsOrderSaveOrders';
 import ViewAllNotifications from '../pages/ViewAllNotifications';
-// import LoginLeadsGeneration from '../LeadsGenerationPages/LoginLeadsGeneration';
-// import LeadsGenerationDashboard from '../LeadsGenerationPages/LeadsGenerationDashboard';
-// import AllLeads from '../LeadsGenerationPages/AllLeads'
+import AddProject from '../pages/AddProject';
+import AddTask from '../pages/AddTask';
 
 function routing() {
   return (
@@ -61,7 +60,7 @@ function routing() {
 
 
           {
-            secureLocalStorage.getItem("access_token") !== undefined && secureLocalStorage.getItem("access_token") !== null && secureLocalStorage.getItem("access_token") !== "" ?
+            secureLocalStorage.getItem("access_token") !== undefined && secureLocalStorage.getItem("access_token") !== null && secureLocalStorage.getItem("access_token") !== "" && secureLocalStorage.getItem("access_token") == null || secureLocalStorage.getItem("access_token") == "" || secureLocalStorage.getItem("access_token") == secureLocalStorage.getItem("access_token")?
               <>
                 {
                   secureLocalStorage.getItem("type") == 'user' ?
@@ -91,6 +90,8 @@ function routing() {
                             <Route path="/OtherPlatFormsOrderSaveOrders" element={<OtherPlatFormsOrderSaveOrders />} />
                             <Route path="/Refer" element={<Refer />} />
                             <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
+                            <Route path='/AddProject' element={<AddProject />} />
+                            <Route path='/AddTask' element={<AddTask />} />
                           </>
                           // project manager
                           : secureLocalStorage.getItem("role_id") == 2 ?
@@ -115,92 +116,97 @@ function routing() {
                               <Route path="/ViewOrderRequest" element={<ViewOrdersQuotation />} />
                               <Route path="/OtherPlatFormsOrderSaveOrders" element={<OtherPlatFormsOrderSaveOrders />} />
                               <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
+                              <Route path='/AddProject' element={<AddProject />} />
+                              <Route path='/AddTask' element={<AddTask />} />
                             </>
-                            // team lead
-                            : secureLocalStorage.getItem("role_id") == 3 ?
-                              <>
-                                <Route path="/Dashboard" element={<Dashboard />} />
-                                <Route path="CustomersList" element={<CustomersList />} />
-                                <Route path="DisputeOrder" element={<DisputeOrder />} />
-                                <Route path="UsersList" element={<UsersList />} />
-                                <Route path='AllOrders' element={<AllOrders />} />
-                                <Route path='UserStatistics' element={<UserStatistics />} />
-                                <Route path='CustomerLeads' element={<CustomerLeads />} />
-                                <Route path='Chat' element={<Chat />} />
-                                <Route path='Profile' element={<Profile />} />
-                                <Route path="/OrderQuotations" element={<OrderQuotations />} />
-                                <Route path="/OrderReply" element={<OrderReply />} />
-                                <Route path="/ChangePwd" element={<ChangePwd />} />
-                                <Route path="/FrontSales" element={<FrontSales />} />
-                                <Route path="/UpSales" element={<UpSales />} />
-                                <Route path="/Refer" element={<Refer />} />
-                                <Route path="/ViewFrontSaleOrder" element={<ViewFrontSaleOrder />} />
-                                <Route path="/ViewUpsaleorder" element={<ViewUpsaleorder />} />
-                                <Route path="/ViewOrderRequest" element={<ViewOrdersQuotation />} />
-                                <Route path="/OtherPlatFormsOrderSaveOrders" element={<OtherPlatFormsOrderSaveOrders />} />
-                                <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
-                              </>
-                              // closer
-                              : secureLocalStorage.getItem("role_id") == 4 ?
-                                <>
-                                  <Route path="/Dashboard" element={<Dashboard />} />
-                                  <Route path="CustomersList" element={<CustomersList />} />
-                                  <Route path="DisputeOrder" element={<DisputeOrder />} />
-                                  <Route path="UsersList" element={<UsersList />} />
-                                  <Route path='AllOrders' element={<AllOrders />} />
-                                  <Route path='UserStatistics' element={<UserStatistics />} />
-                                  <Route path='CustomerLeads' element={<CustomerLeads />} />
-                                  <Route path='Chat' element={<Chat />} />
-                                  <Route path='Profile' element={<Profile />} />
-                                  <Route path="/OrderQuotations" element={<OrderQuotations />} />
-                                  <Route path="/OrderReply" element={<OrderReply />} />
-                                  <Route path="/ChangePwd" element={<ChangePwd />} />
-                                  <Route path="/FrontSales" element={<FrontSales />} />
-                                  <Route path="/UpSales" element={<UpSales />} />
-                                  <Route path="/Refer" element={<Refer />} />
-                                  <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
-                                </>
-                                // back office
-                                : secureLocalStorage.getItem("role_id") == 5 ?
-                                  <>
-                                    <Route path="/Dashboard" element={<Dashboard />} />
-                                    <Route path="CustomersList" element={<CustomersList />} />
-                                    <Route path="DisputeOrder" element={<DisputeOrder />} />
-                                    <Route path="UsersList" element={<UsersList />} />
-                                    <Route path='AllOrders' element={<AllOrders />} />
-                                    <Route path='UserStatistics' element={<UserStatistics />} />
-                                    <Route path='CustomerLeads' element={<CustomerLeads />} />
-                                    <Route path='Chat' element={<Chat />} />
-                                    <Route path='Profile' element={<Profile />} />
-                                    <Route path="/OrderQuotations" element={<OrderQuotations />} />
-                                    <Route path="/OrderReply" element={<OrderReply />} />
-                                    <Route path="/ChangePwd" element={<ChangePwd />} />
-                                    <Route path="/FrontSales" element={<FrontSales />} />
-                                    <Route path="/UpSales" element={<UpSales />} />
-                                    <Route path="/Refer" element={<Refer />} />
-                                    <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
-                                  </>
-                                  // fresher
-                                  : secureLocalStorage.getItem("role_id") == 6 ?
-                                    <>
-                                      <Route path="/CustomersList" element={<CustomersList />} />
-                                      <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
-                                      <Route path="UsersList" element={<UsersList />} />
-                                      <Route path='CustomerLeads' element={<CustomerLeads />} />
-                                      <Route path='Chat' element={<Chat />} />
-                                      <Route path='Profile' element={<Profile />} />
-                                      <Route path="/OrderQuotations" element={<OrderQuotations />} />
-                                      <Route path="/ChangePwd" element={<ChangePwd />} />
-                                    </>
-                                    // LEAD GENERATION ROLE
-                                    : secureLocalStorage.getItem("role_id") == 7 ?
-                                      <>
-                                        <Route path="/Dashboard" element={<Dashboard />} />
-                                        <Route path="/LeadsGeneration" element={<LeadsGeneration />} />
-                                        <Route path="/OrderLeads" element={<OrderLeads />} />
-                                        <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
-                                      </>
-                                      : <Route path="*" element={<Error />} />
+                          // team lead
+                          : secureLocalStorage.getItem("role_id") == 3 ?
+                            <>
+                              <Route path="/Dashboard" element={<Dashboard />} />
+                              <Route path="CustomersList" element={<CustomersList />} />
+                              <Route path="DisputeOrder" element={<DisputeOrder />} />
+                              <Route path="UsersList" element={<UsersList />} />
+                              <Route path='AllOrders' element={<AllOrders />} />
+                              <Route path='UserStatistics' element={<UserStatistics />} />
+                              <Route path='CustomerLeads' element={<CustomerLeads />} />
+                              <Route path='Chat' element={<Chat />} />
+                              <Route path='Profile' element={<Profile />} />
+                              <Route path="/OrderQuotations" element={<OrderQuotations />} />
+                              <Route path="/OrderReply" element={<OrderReply />} />
+                              <Route path="/ChangePwd" element={<ChangePwd />} />
+                              <Route path="/FrontSales" element={<FrontSales />} />
+                              <Route path="/UpSales" element={<UpSales />} />
+                              <Route path="/Refer" element={<Refer />} />
+                              <Route path="/ViewFrontSaleOrder" element={<ViewFrontSaleOrder />} />
+                              <Route path="/ViewUpsaleorder" element={<ViewUpsaleorder />} />
+                              <Route path="/ViewOrderRequest" element={<ViewOrdersQuotation />} />
+                              <Route path="/OtherPlatFormsOrderSaveOrders" element={<OtherPlatFormsOrderSaveOrders />} />
+                              <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
+                              <Route path='/AddProject' element={<AddProject />} />
+                              <Route path='/AddTask' element={<AddTask />} />
+                            </>
+                          // closer
+                          : secureLocalStorage.getItem("role_id") == 4 ?
+                            <>
+                              <Route path="/Dashboard" element={<Dashboard />} />
+                              <Route path="CustomersList" element={<CustomersList />} />
+                              <Route path="DisputeOrder" element={<DisputeOrder />} />
+                              <Route path="UsersList" element={<UsersList />} />
+                              <Route path='AllOrders' element={<AllOrders />} />
+                              <Route path='UserStatistics' element={<UserStatistics />} />
+                              <Route path='CustomerLeads' element={<CustomerLeads />} />
+                              <Route path='Chat' element={<Chat />} />
+                              <Route path='Profile' element={<Profile />} />
+                              <Route path="/OrderQuotations" element={<OrderQuotations />} />
+                              <Route path="/OrderReply" element={<OrderReply />} />
+                              <Route path="/ChangePwd" element={<ChangePwd />} />
+                              <Route path="/FrontSales" element={<FrontSales />} />
+                              <Route path="/UpSales" element={<UpSales />} />
+                              <Route path="/Refer" element={<Refer />} />
+                              <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
+                            </>
+                          // back office
+                          : secureLocalStorage.getItem("role_id") == 5 ?
+                            <>
+                              <Route path="/Dashboard" element={<Dashboard />} />
+                              <Route path="CustomersList" element={<CustomersList />} />
+                              <Route path="DisputeOrder" element={<DisputeOrder />} />
+                              <Route path="UsersList" element={<UsersList />} />
+                              <Route path='AllOrders' element={<AllOrders />} />
+                              <Route path='UserStatistics' element={<UserStatistics />} />
+                              <Route path='CustomerLeads' element={<CustomerLeads />} />
+                              <Route path='Chat' element={<Chat />} />
+                              <Route path='Profile' element={<Profile />} />
+                              <Route path="/OrderQuotations" element={<OrderQuotations />} />
+                              <Route path="/OrderReply" element={<OrderReply />} />
+                              <Route path="/ChangePwd" element={<ChangePwd />} />
+                              <Route path="/FrontSales" element={<FrontSales />} />
+                              <Route path="/UpSales" element={<UpSales />} />
+                              <Route path="/Refer" element={<Refer />} />
+                              <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
+                            </>
+                          // fresher
+                          : secureLocalStorage.getItem("role_id") == 6 ?
+                            <>
+                              <Route path="/CustomersList" element={<CustomersList />} />
+                              <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
+                              <Route path="UsersList" element={<UsersList />} />
+                              <Route path='CustomerLeads' element={<CustomerLeads />} />
+                              <Route path='Chat' element={<Chat />} />
+                              <Route path='Profile' element={<Profile />} />
+                              <Route path="/OrderQuotations" element={<OrderQuotations />} />
+                              <Route path="/ChangePwd" element={<ChangePwd />} />
+                            </>
+                          // LEAD GENERATION ROLE
+                          : secureLocalStorage.getItem("role_id") == 7 ?
+                            <>
+                              <Route path="/Dashboard" element={<Dashboard />} />
+                              <Route path="/LeadsGeneration" element={<LeadsGeneration />} />
+                              <Route path="/OrderLeads" element={<OrderLeads />} />
+                              <Route path='/ViewAllNotifications' element={<ViewAllNotifications />} />
+                            </>
+                          : <Route path="*" element={<Error />} />
+                      
 
                       }
 
@@ -233,7 +239,7 @@ function routing() {
               <Route path="*" element={<Error />} />
           }
           {
-            secureLocalStorage.getItem("access_token") == undefined || secureLocalStorage.getItem("access_token") == null || secureLocalStorage.getItem("access_token") == "" || secureLocalStorage.getItem("access_token") == secureLocalStorage.getItem("access_token") ?
+            secureLocalStorage.getItem("access_token") == undefined  ?
               <>
                 <Route path='/' element={<AskLogin />} />
                 <Route path='/Login' element={<Login />} />
